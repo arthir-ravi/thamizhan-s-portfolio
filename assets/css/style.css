@@ -2058,89 +2058,199 @@ p {
        06.SERVICE css 
 ===========================*/
 .services_area {
-  background-color: var(--color-light);
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-white);
+}
+
+.services_area::before,
+.services_area::after {
+  position: absolute;
+  content: "";
+  width: 92px;
+  height: 120px;
+  background-image: radial-gradient(rgba(0, 167, 142, 0.2) 3px, transparent 3px);
+  background-size: 22px 22px;
+}
+
+.services_area::before {
+  top: 150px;
+  left: 34px;
+}
+
+.services_area::after {
+  right: 34px;
+  bottom: 120px;
+}
+
+.services_grid_row {
+  align-items: stretch;
+}
+
+.services_grid_row [class*="col-"] {
+  display: flex;
 }
 
 .single_service {
-  padding: 30px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
-  box-shadow: 0px 0px 10px 0px rgba(196, 196, 196, 0.3);
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  background-color: var(--color-white);
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .single_service {
-    padding: 20px;
-  }
-}
-.single_service .service_icon i {
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
+  position: relative;
+  width: 100%;
+  height: calc(100% - 30px);
+  min-height: 390px;
+  padding: 34px 26px;
+  border: 1px solid rgba(100, 111, 135, 0.22);
+  border-left: 4px solid var(--color-primary);
+  border-radius: 8px;
   text-align: center;
+  background-color: var(--color-white);
+  -webkit-box-shadow: 0px 12px 30px 0px rgba(41, 54, 81, 0.06);
+  -moz-box-shadow: 0px 12px 30px 0px rgba(41, 54, 81, 0.06);
+  box-shadow: 0px 12px 30px 0px rgba(41, 54, 81, 0.06);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.single_service .service_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: rgba(0, 167, 142, 0.09);
+}
+
+.single_service .service_image i {
+  color: var(--color-primary);
   font-size: 46px;
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border-radius: 25px;
-  border-bottom-right-radius: 0;
+  line-height: 1;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .single_service .service_icon i {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 36px;
-  }
-}
+
 .single_service .service_content {
-  margin-top: 25px;
+  margin-top: 26px;
 }
+
 .single_service .service_content .service_title a {
-  font-size: 22px;
-  font-weight: 600;
   color: var(--color-heading);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+.single_service .service_line {
+  width: 42px;
+  height: 3px;
+  margin: 18px auto 0;
+  border-radius: 50px;
+  background-color: var(--color-primary);
+}
+
+.single_service .service_content p {
+  margin-top: 24px;
+  color: var(--color-text);
+  font-size: 15px;
+  line-height: 27px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.single_service:hover {
+  border-color: rgba(0, 167, 142, 0.45);
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0px 18px 38px 0px rgba(41, 54, 81, 0.1);
+  -moz-box-shadow: 0px 18px 38px 0px rgba(41, 54, 81, 0.1);
+  box-shadow: 0px 18px 38px 0px rgba(41, 54, 81, 0.1);
+}
+
+.single_service:hover .service_image i {
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .single_service {
+    min-height: 390px;
+    padding: 30px 20px;
+  }
+
   .single_service .service_content .service_title a {
     font-size: 18px;
+    line-height: 26px;
+  }
+
+  .single_service .service_content p {
+    font-size: 14px;
+    line-height: 25px;
   }
 }
-.single_service .service_content p {
-  margin-top: 20px;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
+
+@media (max-width: 991px) {
+  .services_area::before,
+  .services_area::after {
+    display: none;
+  }
 }
-.single_service:hover {
-  background-color: var(--color-primary);
-}
-.single_service:hover .service_icon i {
-  background-color: var(--color-white);
-  color: var(--color-primary);
-}
-.single_service:hover .service_content .service_title a {
-  color: var(--color-white);
-}
-.single_service:hover .service_content p {
-  color: var(--color-white);
+
+@media (max-width: 767px) {
+  .services_area {
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  .services_area .section_title {
+    padding-bottom: 12px;
+  }
+
+  .services_area .section_title .main_title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .single_service {
+    min-height: auto;
+    padding: 28px 22px;
+  }
+
+  .single_service .service_image {
+    width: 84px;
+    height: 84px;
+  }
+
+  .single_service .service_image i {
+    font-size: 40px;
+  }
+
+  .single_service .service_content {
+    margin-top: 22px;
+  }
+
+  .single_service .service_content p {
+    margin-top: 20px;
+  }
 }
 
 /*===========================
