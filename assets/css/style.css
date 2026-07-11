@@ -1147,124 +1147,589 @@ p {
 ===========================*/
 .about_image {
   position: relative;
+  max-width: 560px;
+  min-height: 610px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about_content .section_title .main_title span {
+  color: var(--color-primary);
+}
+.about_image::before {
+  position: absolute;
+  content: "";
+  width: 110px;
+  height: 150px;
+  top: 78px;
+  left: 0;
+  z-index: 1;
+  background-image: radial-gradient(rgba(0, 167, 142, 0.36) 3px, transparent 3px);
+  background-size: 24px 24px;
 }
 .about_image img {
-  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 42px;
+  z-index: 4;
+  width: 78%;
+  max-width: 435px;
+  -webkit-transform: translateX(-45%);
+  -moz-transform: translateX(-45%);
+  -ms-transform: translateX(-45%);
+  -o-transform: translateX(-45%);
+  transform: translateX(-45%);
 }
 .about_image .about_shape {
-  width: 404px;
-  height: 525px;
-  border-left: 15px solid var(--color-primary);
-  border-bottom: 15px solid var(--color-primary);
   position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-@media (max-width: 767px) {
-  .about_image .about_shape {
-    width: 100%;
-    height: 380px;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .about_image .about_shape {
-    width: 404px;
-    height: 525px;
-  }
+  width: 355px;
+  height: 505px;
+  left: 130px;
+  top: 40px;
+  z-index: 2;
+  border-radius: 70px;
+  background-color: rgba(0, 167, 142, 0.08);
+  -webkit-transform: rotate(14deg);
+  -moz-transform: rotate(14deg);
+  -ms-transform: rotate(14deg);
+  -o-transform: rotate(14deg);
+  transform: rotate(14deg);
 }
 .about_image .about_shape::before {
   position: absolute;
   content: "";
-  width: 15px;
-  height: 85%;
-  background-color: var(--color-primary);
-  bottom: 0;
-  right: 0;
+  width: 405px;
+  height: 430px;
+  left: -55px;
+  top: 58px;
+  border: 6px solid var(--color-primary);
+  border-radius: 42px;
+  background-color: transparent;
+  -webkit-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -ms-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  transform: rotate(-6deg);
 }
-.about_image .about_shape::after {
+.about_image .about_experience {
   position: absolute;
-  content: "";
-  width: 104%;
-  height: 15px;
-  background-color: var(--color-primary);
-  top: 36px;
-  right: -2px;
-  -webkit-transform: rotate(11deg);
-  -moz-transform: rotate(11deg);
-  -ms-transform: rotate(11deg);
-  -o-transform: rotate(11deg);
-  transform: rotate(11deg);
-  border-top-left-radius: 20px;
+  left: 0;
+  bottom: 102px;
+  z-index: 5;
+  width: 145px;
+  padding: 28px 18px 24px;
+  text-align: center;
+  background-color: var(--color-white);
+  border: 1px solid rgba(41, 54, 81, 0.08);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 10px 28px 0px rgba(41, 54, 81, 0.12);
+  -moz-box-shadow: 0px 10px 28px 0px rgba(41, 54, 81, 0.12);
+  box-shadow: 0px 10px 28px 0px rgba(41, 54, 81, 0.12);
 }
-@media (max-width: 767px) {
-  .about_image .about_shape::after {
-    top: 27px;
-  }
+.about_image .about_experience .about_experience_icon {
+  width: 58px;
+  height: 58px;
+  line-height: 58px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background-color: rgba(0, 167, 142, 0.12);
+  color: var(--color-primary);
+  font-size: 25px;
 }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .about_image .about_shape::after {
-    top: 37px;
-  }
+.about_image .about_experience h4 {
+  font-size: 36px;
+  line-height: 1;
+  color: var(--color-primary);
+}
+.about_image .about_experience p {
+  margin-top: 14px;
+  color: var(--color-heading);
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
 }
 
 .about_content p {
   margin-top: 10px;
 }
 
-.skill_item .skill_header {
-  position: relative;
+.about_content p strong {
+  color: var(--color-primary);
+  font-weight: 700;
 }
-.skill_item .skill_header .skill_title {
-  font-size: 14px;
-  font-weight: 500;
+
+.about_content .about_btn {
+  margin-top: 30px;
 }
-.skill_item .skill_header .skill_percentage {
-  position: absolute;
-  top: -3px;
-  right: 0;
+
+.about_content .about_btn i {
+  margin-right: 8px;
 }
-.skill_item .skill_header .skill_percentage p {
-  font-size: 14px;
-  font-weight: 400;
+
+@media (max-width: 1024px) {
+  .about_image {
+    max-width: 500px;
+    min-height: 560px;
+  }
+
+  .about_image::before {
+    width: 90px;
+    height: 125px;
+    top: 70px;
+    background-size: 20px 20px;
+  }
+
+  .about_image img {
+    bottom: 38px;
+    width: 74%;
+    max-width: 360px;
+    -webkit-transform: translateX(-43%);
+    -moz-transform: translateX(-43%);
+    -ms-transform: translateX(-43%);
+    -o-transform: translateX(-43%);
+    transform: translateX(-43%);
+  }
+
+  .about_image .about_shape {
+    width: 315px;
+    height: 445px;
+    left: 112px;
+    top: 42px;
+    border-radius: 60px;
+  }
+
+  .about_image .about_shape::before {
+    width: 355px;
+    height: 375px;
+    left: -48px;
+    top: 54px;
+    border-width: 5px;
+    border-radius: 38px;
+  }
+
+  .about_image .about_experience {
+    width: 128px;
+    bottom: 96px;
+    padding: 22px 14px 20px;
+  }
+
+  .about_image .about_experience .about_experience_icon {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+  }
+
+  .about_image .about_experience h4 {
+    font-size: 30px;
+  }
+
+  .about_image .about_experience p {
+    font-size: 12px;
+    line-height: 19px;
+  }
 }
-.skill_item .skill_bar {
-  margin-top: 15px;
-}
-.skill_item .skill_bar .bar_inner {
-  width: 100%;
-  height: 9px;
-  border-radius: 5px;
-  background-color: rgba(var(--color-text-rgb), 0.11);
-  position: relative;
-}
-.skill_item .skill_bar .bar_inner .progress_line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 9px;
-  border-radius: 5px;
-  background-color: var(--color-primary);
-  -webkit-transition: all 2s ease-out 0s;
-  -moz-transition: all 2s ease-out 0s;
-  -ms-transition: all 2s ease-out 0s;
-  -o-transition: all 2s ease-out 0s;
-  transition: all 2s ease-out 0s;
-  width: 0;
-}
-.skill_item .skill_bar .bar_inner .progress_line::before {
-  position: absolute;
-  content: "";
-  width: 7px;
-  height: 18px;
-  background-color: var(--color-white);
-  border: 2px solid var(--color-primary);
-  top: -5px;
-  right: 0;
+
+@media (max-width: 767px) {
+  .about_image {
+    display: none;
+  }
 }
 
 /*===========================
-       04.SERVICE css 
+       04.TECHNOLOGIES css 
+===========================*/
+.technologies_area {
+  position: relative;
+  overflow: hidden;
+}
+
+.technologies_intro .section_title .main_title span {
+  color: var(--color-primary);
+}
+
+.technologies_intro p {
+  max-width: 470px;
+  margin-top: 28px;
+  color: var(--color-text);
+}
+
+.technologies_image {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.technologies_image::before {
+  position: absolute;
+  content: "";
+  width: 360px;
+  height: 300px;
+  left: 50%;
+  bottom: 0;
+  border-radius: 50%;
+  background-color: rgba(0, 167, 142, 0.07);
+  -webkit-transform: translateX(-52%);
+  -moz-transform: translateX(-52%);
+  -ms-transform: translateX(-52%);
+  -o-transform: translateX(-52%);
+  transform: translateX(-52%);
+  z-index: -1;
+}
+
+.technologies_image::after {
+  position: absolute;
+  content: "";
+  width: 110px;
+  height: 95px;
+  left: 15px;
+  bottom: 55px;
+  background-image: radial-gradient(rgba(0, 167, 142, 0.28) 3px, transparent 3px);
+  background-size: 20px 20px;
+  z-index: -1;
+}
+
+.technologies_image img {
+  width: 100%;
+}
+
+.tech_contact_box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 440px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  border: 1px solid rgba(0, 167, 142, 0.22);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.82);
+  -webkit-box-shadow: 0px 18px 40px 0px rgba(41, 54, 81, 0.08);
+  -moz-box-shadow: 0px 18px 40px 0px rgba(41, 54, 81, 0.08);
+  box-shadow: 0px 18px 40px 0px rgba(41, 54, 81, 0.08);
+}
+
+.tech_contact_icon {
+  width: 54px;
+  height: 54px;
+  min-width: 54px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: rgba(0, 167, 142, 0.11);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech_contact_icon i {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.tech_contact_content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.tech_contact_content h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.tech_contact_content p {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--color-text);
+}
+
+.tech_contact_btn {
+  height: 40px;
+  line-height: 40px;
+  min-width: 120px;
+  padding: 0 16px;
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.technologies_grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.technology_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 74px;
+  padding: 14px 18px;
+  border: 1px solid rgba(100, 111, 135, 0.18);
+  border-radius: 6px;
+  background-color: var(--color-white);
+  -webkit-box-shadow: 0px 12px 28px 0px rgba(41, 54, 81, 0.04);
+  -moz-box-shadow: 0px 12px 28px 0px rgba(41, 54, 81, 0.04);
+  box-shadow: 0px 12px 28px 0px rgba(41, 54, 81, 0.04);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.technology_item:hover {
+  border-color: rgba(0, 167, 142, 0.35);
+  -webkit-transform: translateY(-3px);
+  -moz-transform: translateY(-3px);
+  -ms-transform: translateY(-3px);
+  -o-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0px 18px 36px 0px rgba(41, 54, 81, 0.1);
+  -moz-box-shadow: 0px 18px 36px 0px rgba(41, 54, 81, 0.1);
+  box-shadow: 0px 18px 36px 0px rgba(41, 54, 81, 0.1);
+}
+
+.technology_item .tech_logo {
+  max-width: 80px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .technologies_image {
+    max-width: 390px;
+    margin-top: 24px;
+  }
+
+  .technologies_image::before {
+    width: 310px;
+    height: 255px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .technologies_image::after {
+    width: 92px;
+    height: 78px;
+    left: 18px;
+    bottom: 45px;
+    background-size: 18px 18px;
+  }
+
+  .tech_contact_box {
+    gap: 10px;
+    max-width: 390px;
+    margin-top: 22px;
+    padding: 14px;
+  }
+
+  .tech_contact_icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+  }
+
+  .tech_contact_icon i {
+    font-size: 25px;
+  }
+
+  .tech_contact_content h5 {
+    font-size: 14px;
+  }
+
+  .tech_contact_btn {
+    height: 38px;
+    line-height: 38px;
+    min-width: 108px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .technologies_grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .technology_item {
+    height: 68px;
+    padding: 12px 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .technologies_intro {
+    text-align: center;
+  }
+
+  .technologies_intro p,
+  .technologies_image,
+  .tech_contact_box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .technologies_image {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 0px;
+  }
+
+  .technologies_grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 767px) {
+  .technologies_area {
+    padding-top: 45px;
+    padding-bottom: 80px;
+  }
+
+  .technologies_intro {
+    margin-top: 0;
+  }
+
+  .technologies_intro .section_title .line {
+    padding-top: 8px;
+  }
+
+  .technologies_intro .section_title .main_title {
+    font-size: 30px;
+    margin-top: 16px;
+  }
+
+  .technologies_intro p {
+    margin-top: 22px;
+    line-height: 28px;
+  }
+
+  .technologies_image {
+    max-width: 380px;
+    margin-top: 22px;
+  }
+
+  .technologies_image::before {
+    width: 300px;
+    height: 250px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .technologies_image::after {
+    width: 92px;
+    height: 78px;
+    left: 10px;
+    bottom: 42px;
+    background-size: 18px 18px;
+  }
+
+  .tech_contact_box {
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+    padding: 16px 14px;
+    text-align: left;
+  }
+
+  .tech_contact_icon {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+
+  .tech_contact_icon i {
+    font-size: 26px;
+  }
+
+  .tech_contact_content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .tech_contact_content h5 {
+    font-size: 14px;
+  }
+
+  .tech_contact_content p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .tech_contact_btn {
+    height: 38px;
+    line-height: 38px;
+    min-width: 112px;
+    padding: 0 14px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .technologies_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .technology_item {
+    height: 68px;
+    padding: 12px;
+  }
+
+  .tech_contact_btn {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .technologies_image {
+    max-width: 360px;
+  }
+
+  .tech_contact_box {
+    max-width: 360px;
+  }
+
+  .technologies_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .technology_item {
+    height: 64px;
+  }
+}
+
+@media (max-width: 360px) {
+  .technologies_image {
+    max-width: 310px;
+  }
+
+  .tech_contact_box {
+    flex-direction: column;
+    text-align: center;
+    max-width: 310px;
+  }
+
+  .tech_contact_btn {
+    margin-left: 0;
+  }
+}
+
+/*===========================
+       05.SERVICE css 
 ===========================*/
 .services_area {
   background-color: var(--color-light);

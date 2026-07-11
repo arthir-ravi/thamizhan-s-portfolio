@@ -44,22 +44,6 @@ $(function () {
     $(".navbar-toggler").removeClass("active");
   });
 
-  ///===== Progress Bar
-
-  if ($(".progress_line").length) {
-    $(".progress_line").appear(
-      function () {
-        var el = $(this);
-        var percent = el.data("width");
-        $(el).css("width", percent + "%");
-      },
-      {
-        accY: 0,
-      }
-    );
-  }
-
-  //===== Back to top
   // Show or hide the sticky footer button
   $(window).on("scroll", function (event) {
     if ($(this).scrollTop() > 600) {
