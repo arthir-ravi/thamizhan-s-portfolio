@@ -50,6 +50,8 @@ $(function () {
   var currentIndex = 0;
   var isProjectSliding = false;
   var projectSlideTimer;
+  var projectAutoScrollTimer;
+  var projectAutoScrollDelay = 1800;
 
   function getProjectsPerPage() {
     if ($(window).width() < 768) {
@@ -118,12 +120,47 @@ $(function () {
     }
   }
 
+  function goToNextProjects() {
+    if (isProjectSliding) {
+      return;
+    }
+
+    var projectsPerPage = getProjectsPerPage();
+    currentIndex++;
+    if (currentIndex > filteredProjects.length - projectsPerPage) {
+      currentIndex = 0;
+    }
+    isProjectSliding = true;
+    clearTimeout(projectSlideTimer);
+    updateProjects(true);
+    projectSlideTimer = setTimeout(function () {
+      isProjectSliding = false;
+    }, 560);
+  }
+
+  function startProjectAutoScroll() {
+    stopProjectAutoScroll();
+
+    if (filteredProjects.length <= getProjectsPerPage()) {
+      return;
+    }
+
+    projectAutoScrollTimer = setInterval(function () {
+      goToNextProjects();
+    }, projectAutoScrollDelay);
+  }
+
+  function stopProjectAutoScroll() {
+    clearInterval(projectAutoScrollTimer);
+  }
+
   // Filter click
   $(".projects_filter button").on("click", function () {
     projectFilter = $(this).data("filter");
     $(".projects_filter button").removeClass("active");
     $(this).addClass("active");
     filterProjects();
+    startProjectAutoScroll();
   });
 
   // Previous
@@ -143,25 +180,13 @@ $(function () {
     projectSlideTimer = setTimeout(function () {
       isProjectSliding = false;
     }, 560);
+    startProjectAutoScroll();
   });
 
   // Next
   $(".projects_next").on("click", function () {
-    if (isProjectSliding) {
-      return;
-    }
-
-    var projectsPerPage = getProjectsPerPage();
-    currentIndex++;
-    if (currentIndex > filteredProjects.length - projectsPerPage) {
-      currentIndex = 0;
-    }
-    isProjectSliding = true;
-    clearTimeout(projectSlideTimer);
-    updateProjects(true);
-    projectSlideTimer = setTimeout(function () {
-      isProjectSliding = false;
-    }, 560);
+    goToNextProjects();
+    startProjectAutoScroll();
   });
 
   $(".projects_grid").on("transitionend", function (event) {
@@ -177,9 +202,19 @@ $(function () {
   // Resize
   $(window).on("resize", function () {
     updateProjects(false);
+    startProjectAutoScroll();
   });
+  $(".projects_area").on("mouseenter focusin", function () {
+    stopProjectAutoScroll();
+  });
+
+  $(".projects_area").on("mouseleave focusout", function () {
+    startProjectAutoScroll();
+  });
+
   // Initial load
   filterProjects();
+  startProjectAutoScroll();
 
   // Show or hide the sticky footer button
   $(window).on("scroll", function (event) {
