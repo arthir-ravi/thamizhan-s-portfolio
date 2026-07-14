@@ -46,175 +46,102 @@ $(function () {
 
   //===== Projects filter
   var projectFilter = "all";
-  var filteredProjects = $();
-  var currentIndex = 0;
-  var isProjectSliding = false;
-  var projectSlideTimer;
-  var projectAutoScrollTimer;
-  var projectAutoScrollDelay = 1800;
+  var $projectsGrid = $(".projects_grid");
+  var projectItems = $projectsGrid.children(".project_item").clone();
 
-  function getProjectsPerPage() {
-    if ($(window).width() < 768) {
-      return 1;
+  function initProjectsCarousel() {
+    if (!$.fn.owlCarousel || !$projectsGrid.length) {
+      return;
     }
-    if ($(window).width() < 992) {
-      return 2;
-    }
-    return 3;
+
+    $projectsGrid.owlCarousel({
+      items: 3,
+      loop: $projectsGrid.children(".project_item").length > 3,
+      margin: 30,
+      nav: true,
+      navText: [
+        '<i class="fa-solid fa-angle-left"></i>',
+        '<i class="fa-solid fa-angle-right"></i>',
+      ],
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1800,
+      autoplayHoverPause: true,
+      smartSpeed: 650,
+      responsive: {
+        0: {
+          items: 1,
+          margin: 0,
+        },
+        768: {
+          items: 2,
+          margin: 24,
+        },
+        992: {
+          items: 3,
+          margin: 30,
+        },
+      },
+    });
   }
 
-  // Filter projects
   function filterProjects() {
-    filteredProjects = $(".project_item").filter(function () {
+    var filteredProjects = projectItems.filter(function () {
       var categories = $(this).data("project-categories");
       var categoryList = categories ? categories.split(" ") : [];
+
       return (
         projectFilter === "all" ||
         categoryList.indexOf(projectFilter) !== -1
       );
     });
-    currentIndex = 0;
-    updateProjects(false);
-  }
 
-  function updateProjects(animate) {
-    var projectsPerPage = getProjectsPerPage();
-    var maxIndex = Math.max(filteredProjects.length - projectsPerPage, 0);
-    var slideAmount = currentIndex * (100 / projectsPerPage);
-    var $grid = $(".projects_grid");
-
-    if (currentIndex > maxIndex) {
-      currentIndex = maxIndex;
-      slideAmount = currentIndex * (100 / projectsPerPage);
+    if ($projectsGrid.hasClass("owl-loaded")) {
+      $projectsGrid.trigger("destroy.owl.carousel");
+      $projectsGrid.removeClass("owl-loaded owl-hidden");
+      $projectsGrid.find(".owl-stage-outer").children().unwrap();
     }
 
-    $(".project_item")
-      .addClass("project_hidden")
-      .attr("aria-hidden", "true");
-
-    filteredProjects.removeClass("project_hidden");
-
-    filteredProjects.each(function (index) {
-      var visible =
-        index >= currentIndex && index < currentIndex + projectsPerPage;
-
-      $(this).attr("aria-hidden", visible ? "false" : "true");
-    });
-
-    $(".projects_pagination").toggle(
-      filteredProjects.length > projectsPerPage
-    );
-
-    $grid.toggleClass("projects_no_transition", !animate);
-    $grid.css({
-      "-webkit-transform": "translateX(-" + slideAmount + "%)",
-      "-moz-transform": "translateX(-" + slideAmount + "%)",
-      "-ms-transform": "translateX(-" + slideAmount + "%)",
-      "-o-transform": "translateX(-" + slideAmount + "%)",
-      transform: "translateX(-" + slideAmount + "%)",
-    });
-
-    if (!animate) {
-      $grid[0].offsetHeight;
-      $grid.removeClass("projects_no_transition");
-    }
+    $projectsGrid.empty().append(filteredProjects.clone());
+    initProjectsCarousel();
   }
 
-  function goToNextProjects() {
-    if (isProjectSliding) {
-      return;
-    }
-
-    var projectsPerPage = getProjectsPerPage();
-    currentIndex++;
-    if (currentIndex > filteredProjects.length - projectsPerPage) {
-      currentIndex = 0;
-    }
-    isProjectSliding = true;
-    clearTimeout(projectSlideTimer);
-    updateProjects(true);
-    projectSlideTimer = setTimeout(function () {
-      isProjectSliding = false;
-    }, 560);
-  }
-
-  function startProjectAutoScroll() {
-    stopProjectAutoScroll();
-
-    if (filteredProjects.length <= getProjectsPerPage()) {
-      return;
-    }
-
-    projectAutoScrollTimer = setInterval(function () {
-      goToNextProjects();
-    }, projectAutoScrollDelay);
-  }
-
-  function stopProjectAutoScroll() {
-    clearInterval(projectAutoScrollTimer);
-  }
-
-  // Filter click
   $(".projects_filter button").on("click", function () {
     projectFilter = $(this).data("filter");
     $(".projects_filter button").removeClass("active");
     $(this).addClass("active");
     filterProjects();
-    startProjectAutoScroll();
   });
 
-  // Previous
-  $(".projects_prev").on("click", function () {
-    if (isProjectSliding) {
-      return;
-    }
-
-    var projectsPerPage = getProjectsPerPage();
-    currentIndex--;
-    if (currentIndex < 0) {
-      currentIndex = Math.max(filteredProjects.length - projectsPerPage, 0);
-    }
-    isProjectSliding = true;
-    clearTimeout(projectSlideTimer);
-    updateProjects(true);
-    projectSlideTimer = setTimeout(function () {
-      isProjectSliding = false;
-    }, 560);
-    startProjectAutoScroll();
-  });
-
-  // Next
-  $(".projects_next").on("click", function () {
-    goToNextProjects();
-    startProjectAutoScroll();
-  });
-
-  $(".projects_grid").on("transitionend", function (event) {
-    if (
-      event.originalEvent.propertyName === "transform" ||
-      event.originalEvent.propertyName === "-webkit-transform"
-    ) {
-      clearTimeout(projectSlideTimer);
-      isProjectSliding = false;
-    }
-  });
-
-  // Resize
-  $(window).on("resize", function () {
-    updateProjects(false);
-    startProjectAutoScroll();
-  });
-  $(".projects_area").on("mouseenter focusin", function () {
-    stopProjectAutoScroll();
-  });
-
-  $(".projects_area").on("mouseleave focusout", function () {
-    startProjectAutoScroll();
-  });
-
-  // Initial load
   filterProjects();
-  startProjectAutoScroll();
+
+  //===== Testimonials carousel
+  if ($.fn.owlCarousel) {
+    $(".testimonial_slider").owlCarousel({
+      items: 2,
+      loop: true,
+      margin: 46,
+      nav: true,
+      navText: [
+        '<i class="fa-solid fa-angle-left"></i>',
+        '<i class="fa-solid fa-angle-right"></i>',
+      ],
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 2600,
+      autoplayHoverPause: true,
+      smartSpeed: 650,
+      responsive: {
+        0: {
+          items: 1,
+          margin: 0,
+        },
+        992: {
+          items: 2,
+        },
+      },
+    });
+  }
 
   // Show or hide the sticky footer button
   $(window).on("scroll", function (event) {

@@ -50,6 +50,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -643,7 +644,7 @@
             </div>
 
             <div class="projects_slider">
-                <div class="row projects_grid">
+                <div class="projects_grid owl-carousel">
                 <div class="col-lg-4 col-md-6 project_item" data-project-categories="ai-chatbots">
                     <div class="single_project">
                         <div class="project_image">
@@ -907,41 +908,301 @@
                 </div>
             </div>
 
-            <div class="projects_pagination" aria-label="Project carousel controls">
-                <button class="projects_prev" type="button" aria-label="Previous projects"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="projects_next" type="button" aria-label="Next projects"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
         </div>
     </section>
     <!--====== PROJECTS PART ENDS ======-->
 
-    <!--====== CALL TO ACTION PART START ======-->
-    <section id="contact" class="call_to_action_area">
+    <!--====== TESTIMONIALS PART START ======-->
+    <section id="testimonials" class="testimonials_area pt-90 pb-120">
         <div class="container">
-            <div class="call_to_action_wrapper wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="call_to_action_box d-md-flex justify-content-between align-items-center">
-                            <div class="call_to_action_content">
-                                <h3 class="action_title">You are using free lite version of Freelancer</h3>
-                                <ul class="line">
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                                <p>Please, purchase full version to get all elements, features, footer credit removal permission and commercial license</p>
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-55">
+                        <h5 class="sub_title">Testimonials</h5>
+                        <h3 class="main_title">What Clients Say</h3>
+                        <ul class="line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial_slider owl-carousel" aria-label="Client testimonials carousel">
+                <div class="single_testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/images/clients/john.webp" alt="John">
+                    </div>
+                    <div class="testimonial_content">
+                        <div class="testimonial_top">
+                            <div class="testimonial_info">
+                                <h4>John Carolan</h4>
+                                <span>Founder at Solve Outsource</span>
                             </div>
-
-                            <div class="call_to_action_btn">
-                                <a href="https://rebrand.ly/freelancer-ud" rel="nofollow" class="main-btn">HIRE ME</a>
+                            <div class="testimonial_rating" aria-label="4 out of 5 stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
                             </div>
                         </div>
+                        <p>Thamizhan does excellent work. This is the third project we’ve partnered with him and each was completed on time with excellent results. 
+                            I would highly recommend him for any of your mobile and web projects.</p>
+                    </div>
+                </div>
+                <div class="single_testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/images/clients/helena.jpg" alt="Helena">
+                    </div>
+                    <div class="testimonial_content">
+                        <div class="testimonial_top">
+                            <div class="testimonial_info">
+                                <h4>Helena Kanoute</h4>
+                                <span>Artwiz</span>
+                            </div>
+                            <div class="testimonial_rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>Thamizhan delivered an outstanding job. We had a few hiccups, as with any developments, but he didn’t give up and worked like a trooper
+                            to deliver on time. I will definitely hire him again.</p>
+                    </div>
+                </div>
+                <div class="single_testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/images/clients/dan.jpg" alt="Dan Rahman">
+                    </div>
+                    <div class="testimonial_content">
+                        <div class="testimonial_top">
+                            <div class="testimonial_info">
+                                <h4>Dan Rahman</h4>
+                                <span>ListFlag</span>
+                            </div>
+                            <div class="testimonial_rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>Excellent engineer. Thamizhan delivered what I wanted and more. When he had a question, he didn’t hesitate to ask instead of sitting blocked. 
+                            He worked his way around several difficulties and made great suggestions that improved the final product.
+                        </p>
+                    </div>
+                </div>
+                <div class="single_testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/images/clients/karthik.webp" alt="Karthik Velappan">
+                    </div>
+                    <div class="testimonial_content">
+                        <div class="testimonial_top">
+                            <div class="testimonial_info">
+                                <h4>Karthik Velappan</h4>
+                                <span>Co Founder &amp; CEO, Shelfperks</span>
+                            </div>
+                            <div class="testimonial_rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>I can confidently say that Thamizhan has been an invaluable partner in our growth. 
+                            His expertise in mobile app development has been instrumental in creating a user-friendly and efficient experience for our store owners.
+                            Hi is incredibly responsive and adaptable.</p>
+                    </div>
+                </div>
+                <div class="single_testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/images/clients/sada.webp" alt="Sadasivam Kannan">
+                    </div>
+                    <div class="testimonial_content">
+                        <div class="testimonial_top">
+                            <div class="testimonial_info">
+                                <h4>Sadasivam Kannan</h4>
+                                <span>VP, Riverstone Technologies</span>
+                            </div>
+                            <div class="testimonial_rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>We would like to extend our sincere gratitude for the exceptional performance of Thamizhan in all our contracts. 
+                            His technical expertise, dedication, and cooperative methods had a significant impact on our project success.
+                            I would like to express my gratitude for your outstanding service.</p>
+                    </div>
+                </div>
+                <div class="single_testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/images/clients/meng.webp" alt="Meng Liang Tan">
+                    </div>
+                    <div class="testimonial_content">
+                        <div class="testimonial_top">
+                            <div class="testimonial_info">
+                                <h4>Meng Liang Tan</h4>
+                                <span>Director, LoanCompareSG</span>
+                            </div>
+                            <div class="testimonial_rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>We had engaged Thamizhan since 2016. He demonstrated exceptional skill and creativity in developing our mobile & web apps, 
+                            delivering a seamless user experience with robust functionality. 
+                            His commitment to quality and timely delivery is commendable, making him a reliable choice for future projects.</p>
+                    </div>
+                </div>
+                <div class="single_testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/images/clients/gopi.webp" alt="Gopi">
+                    </div>
+                    <div class="testimonial_content">
+                        <div class="testimonial_top">
+                            <div class="testimonial_info">
+                                <h4>Gopinathan Ramachandran</h4>
+                                <span>Founder, Shyaway</span>
+                            </div>
+                            <div class="testimonial_rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>Working with Tamil on the Shyaway mobile app was fantastic. 
+                            His expertise in both Android and iOS development, alongside his clear communication, made the process seamless. 
+                            The resulting app is user-centric, visually appealing, and a huge success! Highly recommend him.</p>
+                    </div>
+                </div>
+                <div class="single_testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/images/clients/vinoth.webp" alt="Vinoth Gowrinathan">
+                    </div>
+                    <div class="testimonial_content">
+                        <div class="testimonial_top">
+                            <div class="testimonial_info">
+                                <h4>Vinoth Gowrinathan</h4>
+                                <span>CTO, Innergys</span>
+                            </div>
+                            <div class="testimonial_rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>Thamizhan not only understood our vision but also brought it to life with precision and creativity.
+                            From the initial concept discussions to the final product launch, He demonstrated unwavering commitment, technical expertise, and a deep understanding of our industry.</p>
+                    </div>
+                </div>
+                <div class="single_testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/images/clients/david.jpg" alt="David Brinkman">
+                    </div>
+                    <div class="testimonial_content">
+                        <div class="testimonial_top">
+                            <div class="testimonial_info">
+                                <h4>David Brinkman</h4>
+                                <span>CEO / AssureSign, LLC</span>
+                            </div>
+                            <div class="testimonial_rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>From the start Thamizhan was great to work with. His adaptability despite a 9.5-hour time difference was impressive, and he completed 
+                            everything ahead of schedule. He demonstrated strong expertise in iOS and Android development,  quickly grasped project requirements, 
+                            and provided valuable suggestions. I thoroughly enjoyed working with him and look forward to collaborating with him on future projects.</p>
+                    </div>
+                </div>
+                <div class="single_testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/images/clients/hush.jpg" alt="Hush A">
+                    </div>
+                    <div class="testimonial_content">
+                        <div class="testimonial_top">
+                            <div class="testimonial_info">
+                                <h4>Hush A</h4>
+                            </div>
+                            <div class="testimonial_rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>Thamizhan is well profession in Android and iOS projects. Most importantly, he is honest and supportive. I am fully satisfied with 
+                            his excellent work and will definitely assign him more projects in the future. He is my favorite developer.</p>
+                    </div>
+                </div>
+                <div class="single_testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/images/clients/Ionut.webp" alt="Ionut Dricu">
+                    </div>
+                    <div class="testimonial_content">
+                        <div class="testimonial_top">
+                            <div class="testimonial_info">
+                                <h4>Ionut Dricu</h4>
+                                <span>Html Clouds</span>
+                            </div>
+                            <div class="testimonial_rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>Thamizhan Was a great developer, we enjoyed working with him. He showed excellent skills to deliver our project and has been very efficient.</p>
+                    </div>
+                </div>
+                <div class="single_testimonial">
+                    <div class="testimonial_image">
+                        <img src="assets/images/clients/ashwin.png" alt="Ashwin Gowtham">
+                    </div>
+                    <div class="testimonial_content">
+                        <div class="testimonial_top">
+                            <div class="testimonial_info">
+                                <h4>Ashwin Gowtham</h4>
+                                <span>Founder & CEO / ChargeDock</span>
+                            </div>
+                            <div class="testimonial_rating" aria-label="5 out of 5 stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <p>Partnering with Thamizhan to develop our EV charge station locator and monitor app was a brilliant decision. The app empowers 
+                            EV drivers to locate available charging stations and monitor their charging status remotely. This has significantly improved 
+                            the user experience for EV drivers in our region and has helped to promote the adoption of electric vehicles.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--====== CALL TO ACTION PART ENDS ======-->
+    <!--====== TESTIMONIALS PART ENDS ======-->
 
     <!--====== FOOTER PART START ======-->
     <footer id="footer" class="footer_area gray-bg pt-115 pb-120">
@@ -983,6 +1244,7 @@
     <!--====== Scrolling Nav js ======-->
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/scrolling-nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
 </body>
