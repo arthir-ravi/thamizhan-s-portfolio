@@ -21,13 +21,21 @@ $(function () {
   // Active link switching
   $(window).scroll(function () {
     var scrollbarLocation = $(this).scrollTop();
-    scrollLink.each(function () {
-      var sectionOffset = $(this.hash).offset().top - 73;
-      if (sectionOffset <= scrollbarLocation) {
-        $(this).parent().addClass("active");
-        $(this).parent().siblings().removeClass("active");
-      }
-    });
+    var windowHeight = $(window).height();
+    var documentHeight = $(document).height();
+
+    if (scrollbarLocation + windowHeight >= documentHeight - 15) {
+      scrollLink.parent().removeClass("active");
+      scrollLink.last().parent().addClass("active");
+    } else {
+      scrollLink.each(function () {
+        var sectionOffset = $(this.hash).offset().top - 73;
+        if (sectionOffset <= scrollbarLocation) {
+          $(this).parent().addClass("active");
+          $(this).parent().siblings().removeClass("active");
+        }
+      });
+    }
   });
 
   //===== close navbar-collapse when a  clicked
