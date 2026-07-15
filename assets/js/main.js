@@ -154,7 +154,7 @@ $(function () {
   //===== Testimonials carousel
   if ($.fn.owlCarousel) {
     $(".testimonial_slider").owlCarousel({
-      items: 2,
+      items: 1,
       loop: true,
       margin: 46,
       nav: true,
@@ -172,8 +172,9 @@ $(function () {
           items: 1,
           margin: 0,
         },
-        992: {
+        1400: {
           items: 2,
+          margin: 46,
         },
       },
     });
