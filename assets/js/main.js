@@ -115,6 +115,42 @@ $(function () {
 
   filterProjects();
 
+  //===== Technologies carousel
+  if ($.fn.owlCarousel) {
+    $(".technologies_carousel").owlCarousel({
+      items: 7,
+      loop: true,
+      margin: 20,
+      nav: true,
+      navText: [
+        '<i class="fa-solid fa-angle-left"></i>',
+        '<i class="fa-solid fa-angle-right"></i>',
+      ],
+      dots: true,
+      autoplay: true,
+      autoplayTimeout: 2200,
+      autoplayHoverPause: true,
+      smartSpeed: 650,
+      responsive: {
+        0: {
+          items: 2,
+        },
+        480: {
+          items: 2,
+        },
+        768: {
+          items: 3,
+        },
+        992: {
+          items: 5,
+        },
+        1200: {
+          items: 7,
+        },
+      },
+    });
+  }
+
   //===== Testimonials carousel
   if ($.fn.owlCarousel) {
     $(".testimonial_slider").owlCarousel({
