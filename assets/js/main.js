@@ -6,6 +6,13 @@ $(function () {
     $(".preloader").delay(500).fadeOut(500);
   });
 
+  //===== Load Reusable Footer Component
+  var $footerPlaceholder = $("#footer-placeholder");
+  if ($footerPlaceholder.length) {
+    var basePath = $footerPlaceholder.data("base-path") || "";
+    $footerPlaceholder.load(basePath + "assets/components/footer.html");
+  }
+
   //===== Sticky
   $(window).on("scroll", function (event) {
     var scroll = $(window).scrollTop();
