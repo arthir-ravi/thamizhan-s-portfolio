@@ -146,39 +146,26 @@ $(function () {
 
   filterProjects();
 
-  //===== Technologies carousel
-  if ($.fn.owlCarousel) {
-    $(".technologies_carousel").owlCarousel({
-      items: 7,
-      loop: true,
-      margin: 20,
-      nav: true,
-      navText: [
-        '<i class="fa-solid fa-angle-left"></i>',
-        '<i class="fa-solid fa-angle-right"></i>',
-      ],
-      dots: true,
-      autoplay: true,
-      autoplayTimeout: 2200,
-      autoplayHoverPause: true,
-      smartSpeed: 650,
-      responsive: {
-        0: {
-          items: 2,
-        },
-        480: {
-          items: 2,
-        },
-        768: {
-          items: 3,
-        },
-        992: {
-          items: 5,
-        },
-        1200: {
-          items: 7,
-        },
-      },
+  //===== Technologies marquee
+  var $technologiesMarquee = $(".technologies_marquee");
+  var $technologiesCarousel = $technologiesMarquee.find(".technologies_carousel");
+  if ($technologiesCarousel.length) {
+    var $technologyItems = $technologiesCarousel.children(".technology_item");
+    var $technologyTrack = $('<div class="technologies_marquee_track"></div>');
+
+    $technologyItems.appendTo($technologyTrack);
+    $technologyItems
+      .clone()
+      .attr("aria-hidden", "true")
+      .appendTo($technologyTrack);
+    $technologiesCarousel.append($technologyTrack);
+
+    $technologiesMarquee.on("click", ".technologies_marquee_prev", function () {
+      $(this).closest(".technologies_marquee").addClass("is-reversed");
+    });
+
+    $technologiesMarquee.on("click", ".technologies_marquee_next", function () {
+      $(this).closest(".technologies_marquee").removeClass("is-reversed");
     });
   }
 
