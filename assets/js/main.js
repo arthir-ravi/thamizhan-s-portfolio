@@ -20,6 +20,15 @@ $(function () {
     $navbarPlaceholder.load(
       basePath + "assets/components/navbar.html",
       function () {
+        if (basePath && basePath !== "") {
+          $navbarPlaceholder.find("a.page-scroll").each(function () {
+            var href = $(this).attr("href");
+            if (href && href.charAt(0) === "#") {
+              $(this).attr("href", basePath + href);
+              $(this).removeClass("page-scroll");
+            }
+          });
+        }
         initNavbar();
       }
     );
@@ -38,29 +47,32 @@ $(function () {
       }
     });
 
-    //===== Section Menu Active
-    var scrollLink = $(".page-scroll");
-    // Active link switching
-    $(window).on("scroll", function () {
-      var scrollbarLocation = $(this).scrollTop();
-      var windowHeight = $(window).height();
-      var documentHeight = $(document).height();
+    //===== Section Menu Active (Home page only)
+    if (!$("body").hasClass("inner_page")) {
+      var scrollLink = $(".page-scroll");
+      $(window).on("scroll", function () {
+        var scrollbarLocation = $(this).scrollTop();
+        var windowHeight = $(window).height();
+        var documentHeight = $(document).height();
 
-      if (scrollbarLocation + windowHeight >= documentHeight - 15) {
-        scrollLink.parent().removeClass("active");
-        scrollLink.last().parent().addClass("active");
-      } else {
-        scrollLink.each(function () {
+        if (scrollbarLocation + windowHeight >= documentHeight - 15) {
+          scrollLink.parent().removeClass("active");
+          scrollLink.last().parent().addClass("active");
+        } else {
+          scrollLink.each(function () {
           if (this.hash && $(this.hash).length) {
             var sectionOffset = $(this.hash).offset().top - 73;
-            if (sectionOffset <= scrollbarLocation) {
-              $(this).parent().addClass("active");
-              $(this).parent().siblings().removeClass("active");
+              if (sectionOffset <= scrollbarLocation) {
+                $(this).parent().addClass("active");
+                $(this).parent().siblings().removeClass("active");
+              }
             }
-          }
-        });
-      }
-    });
+          });
+        }
+      });
+    } else {
+      $(".navbar-nav .nav-item").removeClass("active");
+    }
 
     //===== close navbar-collapse when a  clicked
     $(".navbar-nav a").on("click", function () {

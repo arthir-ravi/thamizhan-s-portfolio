@@ -2405,8 +2405,7 @@ p {
 }
 
 .project_content a:hover {
-  color: var(--color-white);
-  background-color: var(--color-primary);
+  color: var(--color-primary);
 }
 
 .projects_grid .owl-nav {
