@@ -430,21 +430,21 @@ body.inner_page .navbar-nav .nav-item:hover > a {
     EQUS Page Overrides
 ======================================*/
 
-.equs_page .project_showcase_wrapper {
+.slider_image_page .project_showcase_wrapper {
   max-width: 700px;
 }
-.equs_page .project_showcase_card {
-  background: transparent;
+.slider_image_page .project_showcase_card {
+  background: transparent !important;
   border: none;
   box-shadow: none;
   padding: 0;
 }
-.equs_page .project_showcase_slider {
+.slider_image_page .project_showcase_slider {
   aspect-ratio: 4 / 3;
   overflow: visible;
-  background: transparent;
+  background: transparent !important;
 }
-.equs_page .project_showcase_slider .showcase_slide {
+.slider_image_page .project_showcase_slider .showcase_slide {
   display: block;
   width: 100%;
   height: 100%;
