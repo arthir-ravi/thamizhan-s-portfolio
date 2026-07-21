@@ -205,6 +205,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 .project_about_text p {
   font-size: 14.5px;
   line-height: 27px;
+  text-align: justify;
   color: var(--color-text);
 }
 .project_about_text p + p {
@@ -513,5 +514,409 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 
   .misolah_details_page .project_showcase_slider {
     height: 340px;
+  }
+}
+
+.shelfperks_hero_visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  padding-left: 12px;
+}
+
+.shelfperks_hero_visual img {
+  display: block;
+  width: min(100%, 520px);
+  height: auto;
+}
+
+.shelfperks_details_page .project_hero_features {
+  margin-top: 34px;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.shelfperks_details_page .project_hero_features .project_feature_item:not(:last-child)::after {
+  display: none;
+}
+
+.shelfperks_details_page .project_hero_features .project_feature_item {
+  padding-bottom: 22px;
+}
+
+.shelfperks_about_card {
+  overflow: hidden;
+}
+
+.shelfperks_about_visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.shelfperks_about_visual img {
+  display: block;
+  width: min(100%, 430px);
+  height: auto;
+}
+
+.project_meta_area {
+  padding: 0 0 70px;
+}
+
+.shelfperks_meta_row > [class*="col-"] {
+  padding-left: 9px;
+  padding-right: 9px;
+}
+
+.project_meta_card {
+  position: relative;
+  height: 100%;
+}
+
+.shelfperks_details_page .project_meta_card {
+  padding: 28px 26px;
+  border-radius: 18px;
+  box-shadow: 0 18px 42px rgba(41, 54, 81, 0.06);
+}
+
+.shelfperks_details_page .project_meta_card .project_section_head {
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.shelfperks_details_page .project_meta_card .project_section_icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 16px;
+  background: rgba(0, 167, 142, 0.12);
+  color: var(--color-primary);
+}
+
+.shelfperks_details_page .project_meta_card .project_section_head h3 {
+  padding-bottom: 10px;
+  font-size: 17px;
+  letter-spacing: 0.2px;
+}
+
+.shelfperks_details_page .project_meta_card .project_section_head h3::after {
+  width: 34px;
+  height: 2px;
+}
+
+.project_meta_list {
+  display: grid;
+  gap: 18px;
+}
+
+.shelfperks_details_page .project_meta_list {
+  gap: 12px;
+}
+
+.project_meta_item {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: start;
+  gap: 16px;
+}
+
+.shelfperks_details_page .project_meta_item {
+  grid-template-columns: 78px 1fr;
+  gap: 10px;
+}
+
+.project_meta_label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.shelfperks_details_page .project_meta_label {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.project_meta_value,
+.project_meta_value a {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.shelfperks_details_page .project_meta_value,
+.shelfperks_details_page .project_meta_value a {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.shelfperks_details_page .project_meta_value a {
+  color: var(--color-project-info-link);
+  font-weight: 600;
+}
+
+.shelfperks_details_page .tools_grid {
+  gap: 10px 8px;
+}
+
+.shelfperks_details_page .tool_pill {
+  gap: 8px;
+  padding: 7px 13px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.shelfperks_details_page .tool_pill i {
+  font-size: 12px;
+}
+
+.project_meta_value a {
+  color: var(--color-primary);
+}
+
+.project_rating {
+  display: inline-flex;
+  gap: 6px;
+  color: #00a78e;
+}
+
+@media (min-width: 992px) {
+  .shelfperks_meta_row {
+    display: flex;
+    align-items: stretch;
+    margin-left: -9px;
+    margin-right: -9px;
+  }
+
+  .shelfperks_meta_row > .col-lg-5 {
+    flex: 0 0 32%;
+    max-width: 32%;
+  }
+
+  .shelfperks_meta_row > .col-lg-7 {
+    flex: 0 0 68%;
+    max-width: 68%;
+  }
+
+  .shelfperks_meta_row > .col-lg-5,
+  .shelfperks_meta_row > .col-lg-7 {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .shelfperks_hero_visual {
+    padding-left: 0;
+  }
+
+  .shelfperks_hero_visual img {
+    width: min(100%, 420px);
+  }
+
+  .shelfperks_meta_row > .col-lg-5,
+  .shelfperks_meta_row > .col-lg-7 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .shelfperks_hero_visual {
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .shelfperks_about_visual {
+    margin-bottom: 30px;
+  }
+
+  .shelfperks_meta_row > .col-lg-5 + .col-lg-7 {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .shelfperks_details_page .project_hero_features {
+    margin-top: 28px;
+  }
+
+  .shelfperks_hero_visual img {
+    width: min(100%, 320px);
+  }
+
+  .shelfperks_about_visual img {
+    width: min(100%, 300px);
+  }
+
+  .project_meta_item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .shelfperks_details_page .project_meta_card {
+    padding: 24px 20px;
+  }
+
+  .shelfperks_details_page .project_meta_item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .shelfperks_meta_row > [class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.mail_automation_page .mail_automation_hero {
+  padding: 70px 0 42px;
+  background: var(--color-white);
+}
+
+.mail_automation_page .mail_automation_row {
+  row-gap: 34px;
+}
+
+.mail_automation_page .project_breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mail_automation_page .project_about_text {
+  margin-top: 24px;
+}
+
+.mail_automation_page .project_about_text p {
+  max-width: 600px;
+}
+
+.mail_automation_page .mail_video_column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail_automation_page .mail_video_panel {
+  width: 100%;
+  max-width: 620px;
+  padding: 34px;
+  border-radius: 16px;
+  background: rgba(0, 167, 142, 0.07);
+  border: 1px solid rgba(0, 167, 142, 0.1);
+}
+
+.mail_automation_page .mail_video_frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--color-heading);
+  box-shadow: 0 18px 40px rgba(41, 54, 81, 0.12);
+}
+
+.mail_automation_page .mail_video_frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.mail_automation_page .mail_video_features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.mail_automation_page .mail_video_feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  min-width: 0;
+}
+
+.mail_automation_page .mail_video_feature + .mail_video_feature {
+  border-left: 1px solid rgba(41, 54, 81, 0.12);
+  padding-left: 22px;
+}
+
+.mail_automation_page .mail_video_feature .project_feature_icon {
+  width: 48px;
+  height: 48px;
+}
+
+.mail_automation_page .mail_video_feature .project_feature_text {
+  padding-top: 2px;
+}
+
+.mail_automation_page .mail_video_feature .project_feature_text h5 {
+  margin-bottom: 2px;
+}
+
+.mail_automation_page .mail_video_feature .project_feature_text p {
+  margin: 0;
+}
+
+.mail_automation_page .mail_tools_area {
+  padding-bottom: 80px;
+}
+
+@media (min-width: 992px) {
+  .mail_automation_page .mail_automation_content {
+    padding-right: 18px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .mail_automation_page .mail_video_panel {
+    padding: 24px;
+  }
+
+  .mail_automation_page .mail_video_features {
+    gap: 16px;
+  }
+
+  .mail_automation_page .mail_video_feature + .mail_video_feature {
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mail_automation_page .mail_automation_hero {
+    padding-top: 54px;
+  }
+
+  .mail_automation_page .project_title,
+  .mail_automation_page .project_about_text p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .mail_automation_page .mail_automation_hero {
+    padding: 42px 0 34px;
+  }
+
+  .mail_automation_page .mail_video_panel {
+    padding: 16px;
+  }
+
+  .mail_automation_page .mail_video_features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 22px;
+  }
+
+  .mail_automation_page .mail_video_feature + .mail_video_feature {
+    border-left: 0;
+    padding-left: 0;
   }
 }
