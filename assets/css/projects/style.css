@@ -452,3 +452,66 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   object-position: center;
   padding: 0;
 }
+
+.misolah_details_page .project_showcase_wrapper {
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.misolah_details_page .project_showcase_slide_area {
+  justify-content: center;
+  gap: 28px;
+}
+
+.misolah_details_page .project_showcase_card {
+  flex: 0 0 250px;
+  width: 250px;
+}
+
+.misolah_details_page .project_showcase_slider {
+  aspect-ratio: auto;
+  height: min(60vh, 420px);
+}
+
+.misolah_details_page .project_showcase_slider .owl-stage-outer,
+.misolah_details_page .project_showcase_slider .owl-stage,
+.misolah_details_page .project_showcase_slider .owl-item {
+  height: 100%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .misolah_details_page .project_showcase_wrapper {
+    max-width: none;
+  }
+
+  .misolah_details_page .project_showcase_slide_area {
+    gap: 24px;
+  }
+
+  .misolah_details_page .project_showcase_card {
+    flex-basis: 236px;
+    width: 236px;
+  }
+
+  .misolah_details_page .project_showcase_slider {
+    height: 390px;
+  }
+}
+
+@media (max-width: 767px) {
+  .misolah_details_page .project_showcase_wrapper {
+    width: 100%;
+    max-width: none;
+  }
+
+  .misolah_details_page .project_showcase_card {
+    flex-basis: min(250px, 100%);
+    width: min(250px, 100%);
+  }
+
+  .misolah_details_page .project_showcase_slider {
+    height: 340px;
+  }
+}
