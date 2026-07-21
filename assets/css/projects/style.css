@@ -102,7 +102,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   max-width: 460px;
   margin-top: 18px;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 27px;
   color: var(--color-text);
 }
 .project_hero_nav_btn {
@@ -482,6 +482,34 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   height: 100%;
 }
 
+.misolah_details_page .misolah_about_card {
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(41, 54, 81, 0.08);
+}
+
+.misolah_details_page .misolah_about_grid {
+  position: relative;
+}
+
+.misolah_details_page .misolah_about_grid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50% + 16px);
+  width: 1px;
+  background: rgba(41, 54, 81, 0.1);
+  transform: translateX(-50%);
+}
+
+.misolah_details_page .misolah_about_card .project_feature_item:not(:last-child)::after {
+  display: none;
+}
+
+.misolah_details_page .misolah_about_card .project_feature_list {
+  background: transparent;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .misolah_details_page .project_showcase_wrapper {
     max-width: none;
@@ -499,6 +527,10 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   .misolah_details_page .project_showcase_slider {
     height: 390px;
   }
+
+  .misolah_details_page .misolah_about_grid::after {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -514,6 +546,10 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 
   .misolah_details_page .project_showcase_slider {
     height: 340px;
+  }
+
+  .misolah_details_page .misolah_about_grid::after {
+    display: none;
   }
 }
 
@@ -568,27 +604,31 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 }
 
 .shelfperks_meta_row > [class*="col-"] {
-  padding-left: 9px;
-  padding-right: 9px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .project_meta_card {
   position: relative;
+  width: 100%;
   height: 100%;
 }
 
-.shelfperks_details_page .project_meta_card {
+.shelfperks_details_page .project_meta_card,
+.shyaway_details_page .project_meta_card {
   padding: 28px 26px;
   border-radius: 18px;
   box-shadow: 0 18px 42px rgba(41, 54, 81, 0.06);
 }
 
-.shelfperks_details_page .project_meta_card .project_section_head {
+.shelfperks_details_page .project_meta_card .project_section_head,
+.shyaway_details_page .project_meta_card .project_section_head {
   gap: 12px;
   margin-bottom: 18px;
 }
 
-.shelfperks_details_page .project_meta_card .project_section_icon {
+.shelfperks_details_page .project_meta_card .project_section_icon,
+.shyaway_details_page .project_meta_card .project_section_icon {
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -597,13 +637,15 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   color: var(--color-primary);
 }
 
-.shelfperks_details_page .project_meta_card .project_section_head h3 {
+.shelfperks_details_page .project_meta_card .project_section_head h3,
+.shyaway_details_page .project_meta_card .project_section_head h3 {
   padding-bottom: 10px;
   font-size: 17px;
   letter-spacing: 0.2px;
 }
 
-.shelfperks_details_page .project_meta_card .project_section_head h3::after {
+.shelfperks_details_page .project_meta_card .project_section_head h3::after,
+.shyaway_details_page .project_meta_card .project_section_head h3::after {
   width: 34px;
   height: 2px;
 }
@@ -613,7 +655,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   gap: 18px;
 }
 
-.shelfperks_details_page .project_meta_list {
+.shelfperks_details_page .project_meta_list,
+.shyaway_details_page .project_meta_list {
   gap: 12px;
 }
 
@@ -624,7 +667,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   gap: 16px;
 }
 
-.shelfperks_details_page .project_meta_item {
+.shelfperks_details_page .project_meta_item,
+.shyaway_details_page .project_meta_item {
   grid-template-columns: 78px 1fr;
   gap: 10px;
 }
@@ -635,7 +679,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   color: var(--color-heading);
 }
 
-.shelfperks_details_page .project_meta_label {
+.shelfperks_details_page .project_meta_label,
+.shyaway_details_page .project_meta_label {
   font-size: 12px;
   line-height: 1.45;
 }
@@ -648,21 +693,26 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 }
 
 .shelfperks_details_page .project_meta_value,
-.shelfperks_details_page .project_meta_value a {
+.shelfperks_details_page .project_meta_value a,
+.shyaway_details_page .project_meta_value,
+.shyaway_details_page .project_meta_value a {
   font-size: 12px;
   line-height: 1.45;
 }
 
-.shelfperks_details_page .project_meta_value a {
+.shelfperks_details_page .project_meta_value a,
+.shyaway_details_page .project_meta_value a {
   color: var(--color-project-info-link);
   font-weight: 600;
 }
 
-.shelfperks_details_page .tools_grid {
+.shelfperks_details_page .tools_grid,
+.shyaway_details_page .tools_grid {
   gap: 10px 8px;
 }
 
-.shelfperks_details_page .tool_pill {
+.shelfperks_details_page .tool_pill,
+.shyaway_details_page .tool_pill {
   gap: 8px;
   padding: 7px 13px;
   border-radius: 8px;
@@ -671,7 +721,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   white-space: nowrap;
 }
 
-.shelfperks_details_page .tool_pill i {
+.shelfperks_details_page .tool_pill i,
+.shyaway_details_page .tool_pill i {
   font-size: 12px;
 }
 
@@ -689,8 +740,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   .shelfperks_meta_row {
     display: flex;
     align-items: stretch;
-    margin-left: -9px;
-    margin-right: -9px;
+    margin-left: -4px;
+    margin-right: -4px;
   }
 
   .shelfperks_meta_row > .col-lg-5 {
@@ -706,6 +757,16 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   .shelfperks_meta_row > .col-lg-5,
   .shelfperks_meta_row > .col-lg-7 {
     display: flex;
+  }
+
+  .shyaway_details_page .shelfperks_meta_row > .col-lg-5 {
+    flex: 0 0 31%;
+    max-width: 31%;
+  }
+
+  .shyaway_details_page .shelfperks_meta_row > .col-lg-7 {
+    flex: 0 0 69%;
+    max-width: 69%;
   }
 }
 
@@ -869,6 +930,85 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   padding-bottom: 80px;
 }
 
+.product_analysis_page .mail_video_panel {
+  max-width: 620px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.product_analysis_page .mail_video_frame {
+  border-radius: 10px;
+  box-shadow: 0 18px 40px rgba(41, 54, 81, 0.12);
+}
+
+.product_analysis_page .mail_video_features {
+  gap: 22px;
+  margin-top: 32px;
+  padding: 28px 26px;
+  border-radius: 10px;
+  background: rgba(0, 167, 142, 0.04);
+  border: 1px solid rgba(0, 167, 142, 0.12);
+}
+
+.product_analysis_page .mail_video_feature .project_feature_icon {
+  background: var(--color-white);
+}
+
+.product_qa_page .mail_video_panel {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.product_qa_page .product_qa_page_head {
+  max-width: 760px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.product_qa_page .product_qa_page_head .project_breadcrumb {
+  justify-content: center;
+}
+
+.product_qa_page .product_qa_page_head .project_title {
+  margin-top: 28px;
+}
+
+.product_qa_page .product_qa_page_head .project_subtitle {
+  margin-bottom: 0;
+}
+
+.product_qa_page .mail_automation_content .project_about_text {
+  margin-top: 0;
+}
+
+.product_qa_page .mail_video_frame {
+  order: 2;
+  border-radius: 14px;
+  box-shadow: 0 16px 36px rgba(41, 54, 81, 0.12);
+}
+
+.product_qa_page .mail_video_features {
+  order: 1;
+  gap: 18px;
+  margin: 0 0 26px;
+  padding: 24px;
+  border-radius: 14px;
+  background: var(--color-white);
+  border: 1px solid rgba(41, 54, 81, 0.08);
+  box-shadow: 0 14px 34px rgba(41, 54, 81, 0.06);
+}
+
+.product_qa_page .mail_video_feature .project_feature_icon {
+  background: rgba(0, 167, 142, 0.07);
+}
+
 @media (min-width: 992px) {
   .mail_automation_page .mail_automation_content {
     padding-right: 18px;
@@ -886,6 +1026,14 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 
   .mail_automation_page .mail_video_feature + .mail_video_feature {
     padding-left: 16px;
+  }
+
+  .product_analysis_page .mail_video_panel {
+    padding: 0;
+  }
+
+  .product_qa_page .mail_video_panel {
+    padding: 0;
   }
 }
 
@@ -918,5 +1066,144 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   .mail_automation_page .mail_video_feature + .mail_video_feature {
     border-left: 0;
     padding-left: 0;
+  }
+
+  .product_analysis_page .mail_video_panel {
+    padding: 0;
+  }
+
+  .product_analysis_page .mail_video_features {
+    padding: 22px 18px;
+  }
+
+  .product_qa_page .mail_video_panel {
+    padding: 0;
+  }
+
+  .product_qa_page .mail_video_features {
+    padding: 22px 18px;
+  }
+}
+
+.shyaway_details_page .shyaway_hero_area {
+  padding: 62px 0 48px;
+}
+
+.shyaway_details_page .shyaway_page_head {
+  max-width: 720px;
+  margin: 0 auto 44px;
+  text-align: center;
+}
+
+.shyaway_details_page .shyaway_page_head .project_breadcrumb {
+  justify-content: center;
+}
+
+.shyaway_details_page .shyaway_page_head .project_title {
+  margin-top: 28px;
+}
+
+.shyaway_details_page .shyaway_story_text {
+  padding: 28px 0 28px 28px;
+}
+
+.shyaway_details_page .shyaway_hero_visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 520px;
+}
+
+.shyaway_details_page .shyaway_hero_visual::before {
+  content: "";
+  position: absolute;
+  inset: 12% 8%;
+  border-radius: 50%;
+  background: rgba(0, 167, 142, 0.07);
+}
+
+.shyaway_details_page .shyaway_phone {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(44%, 260px);
+  height: auto;
+  filter: drop-shadow(0 18px 30px rgba(41, 54, 81, 0.18));
+}
+
+.shyaway_details_page .shyaway_phone_primary {
+  transform: translateX(18px);
+}
+
+.shyaway_details_page .shyaway_phone_secondary {
+  margin-left: -18px;
+  transform: translateY(42px);
+}
+
+.shyaway_details_page .shyaway_about_area {
+  padding-top: 0;
+}
+
+.shyaway_details_page .shyaway_about_card {
+  border-radius: 14px;
+}
+
+.shyaway_details_page .shyaway_impact_grid {
+  row-gap: 24px;
+}
+
+.shyaway_details_page .shyaway_impact_item {
+  height: 100%;
+  padding: 24px;
+  border-radius: 12px;
+  background: rgba(0, 167, 142, 0.04);
+  border: 1px solid rgba(0, 167, 142, 0.1);
+}
+
+.shyaway_details_page .shyaway_impact_item h5 {
+  margin-top: 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.shyaway_details_page .shyaway_impact_item p {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 22px;
+  color: var(--color-text);
+}
+
+.shyaway_details_page .shyaway_meta_area {
+  padding-top: 0;
+}
+
+@media (max-width: 991px) {
+  .shyaway_details_page .shyaway_story_text {
+    padding: 24px;
+  }
+
+  .shyaway_details_page .shyaway_hero_visual {
+    min-height: 460px;
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .shyaway_details_page .shyaway_hero_area {
+    padding: 44px 0 34px;
+  }
+
+  .shyaway_details_page .shyaway_page_head {
+    margin-bottom: 30px;
+  }
+
+  .shyaway_details_page .shyaway_hero_visual {
+    min-height: 360px;
+  }
+
+  .shyaway_details_page .shyaway_phone {
+    width: min(48%, 180px);
   }
 }
