@@ -302,20 +302,27 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   border-color: rgba(0, 167, 142, 0.25);
   transform: translateY(-2px);
 }
-.tool_pill i {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-primary);
-  font-size: 16px;
-}
 @media (min-width: 992px) {
   .project_about_grid > [class*="col-"]:last-child {
     display: flex;
   }
+  .shelfscan_about_card .project_about_grid > [class*="col-"]:first-child {
+    display: flex;
+  }
+  .shelfscan_about_card .project_about_grid > [class*="col-"]:last-child {
+    display: block;
+  }
   .project_feature_list {
     width: 100%;
     margin-top: 0;
+  }
+}
+@media (max-width: 991px) {
+  .shelfscan_about_card .project_feature_list {
+    margin-top: 0;
+  }
+  .shelfscan_about_card .project_about_grid > [class*="col-"]:last-child {
+    margin-top: 28px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -719,11 +726,6 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   font-size: 12px;
   font-weight: 600;
   white-space: nowrap;
-}
-
-.shelfperks_details_page .tool_pill i,
-.shyaway_details_page .tool_pill i {
-  font-size: 12px;
 }
 
 .project_meta_value a {
