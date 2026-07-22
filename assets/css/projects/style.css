@@ -826,7 +826,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
     padding-right: 15px;
   }
 }
-.shyaway_about_area
+
 .mail_automation_page .mail_automation_hero {
   padding: 70px 0 42px;
   background: var(--color-white);
@@ -1002,9 +1002,138 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   background: rgba(0, 167, 142, 0.07);
 }
 
+/*======================================
+    AI Receptionist Page Overrides
+======================================*/
+
+.ai_receptionist_page .mail_automation_hero {
+  padding-bottom: 22px;
+}
+
+.ai_receptionist_page .container {
+  max-width: 960px;
+}
+
+.ai_receptionist_page .ai_article_content {
+  width: 100%;
+}
+
+.ai_receptionist_page .project_title {
+  max-width: 100%;
+}
+
+.ai_receptionist_page .project_about_text p {
+  max-width: 100%;
+}
+
+.ai_receptionist_page .ai_receptionist_panel {
+  max-width: 100%;
+  margin-top: 28px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.ai_receptionist_page .mail_video_frame {
+  border-radius: 8px;
+}
+
+.ai_receptionist_page .ai_features_area {
+  padding: 0 0 46px;
+  background: var(--color-white);
+}
+
+.ai_receptionist_page .ai_features_card {
+  border-radius: 14px;
+}
+
+.ai_receptionist_page .ai_impact_grid {
+  row-gap: 24px;
+}
+
+.ai_receptionist_page .ai_impact_item {
+  height: 100%;
+  padding: 24px;
+  border-radius: 12px;
+  background: rgba(0, 167, 142, 0.04);
+  border: 1px solid rgba(0, 167, 142, 0.1);
+  transition: 0.3s;
+}
+
+.ai_receptionist_page .ai_impact_item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 167, 142, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 167, 142, 0.08);
+}
+
+.ai_receptionist_page .ai_impact_item h5 {
+  margin-top: 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.ai_receptionist_page .ai_impact_item p {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 22px;
+  color: var(--color-text);
+}
+
+.ai_receptionist_page .ai_tools_area {
+  padding: 0 0 80px;
+}
+
+.ai_receptionist_page .ai_tools_area .project_meta_card {
+  padding: 28px 26px;
+  border-radius: 18px;
+  box-shadow: 0 18px 42px rgba(41, 54, 81, 0.06);
+}
+
+.ai_receptionist_page .ai_tools_area .project_section_head {
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.ai_receptionist_page .ai_tools_area .project_section_head h3 {
+  padding-bottom: 10px;
+  font-size: 17px;
+  letter-spacing: 0.2px;
+}
+
+.ai_receptionist_page .ai_tools_area .project_section_head h3::after {
+  width: 34px;
+  height: 2px;
+}
+
+.ai_receptionist_page .ai_tools_area .tools_grid {
+  gap: 10px 8px;
+}
+
+.ai_receptionist_page .ai_tools_area .tool_pill {
+  gap: 8px;
+  padding: 7px 13px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ai_virtual_receptionist_page .ai_tools_area {
+  padding-bottom: 34px;
+}
+
+.ai_virtual_receptionist_page .ai_features_area {
+  padding-bottom: 80px;
+}
+
 @media (min-width: 992px) {
   .mail_automation_page .mail_automation_content {
     padding-right: 18px;
+  }
+
+  .ai_receptionist_page .mail_automation_content {
+    padding-right: 0;
   }
 }
 
@@ -1182,6 +1311,108 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   padding-top: 0;
 }
 
+.marine_details_page .marine_hero_area {
+  padding: 64px 0 48px;
+}
+
+.marine_details_page .marine_intro_row {
+  row-gap: 36px;
+}
+
+.marine_details_page .marine_hero_content {
+  max-width: 520px;
+}
+
+.marine_details_page .marine_hero_visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 0 20px 28px;
+}
+
+.marine_details_page .marine_screen {
+  position: relative;
+  display: block;
+  height: auto;
+  filter: drop-shadow(0 22px 32px rgba(41, 54, 81, 0.15));
+}
+
+.marine_details_page .marine_screen_primary {
+  width: min(100%, 620px);
+  margin-left: auto;
+}
+
+.marine_details_page .marine_about_area {
+  padding-top: 0;
+}
+
+.marine_details_page .marine_about_card {
+  border-radius: 14px;
+}
+
+.marine_details_page .marine_tools_card {
+  height: 100%;
+  padding: 30px 28px;
+}
+
+.marine_details_page .marine_meta_area {
+  padding-top: 0;
+}
+
+.marine_details_page .marine_detail_visual {
+  display: flex;
+  justify-content: center;
+}
+
+.marine_details_page .marine_detail_visual img {
+  display: block;
+  width: min(100%, 760px);
+  height: auto;
+  filter: drop-shadow(0 18px 30px rgba(41, 54, 81, 0.12));
+}
+
+.marine_details_page .marine_features_area {
+  padding-top: 0;
+}
+
+.marine_details_page .marine_features_card {
+  border-radius: 14px;
+}
+
+.marine_details_page .marine_features_grid {
+  row-gap: 24px;
+}
+
+.marine_details_page .marine_feature_item {
+  height: 100%;
+  padding: 24px;
+  border-radius: 12px;
+  background: rgba(0, 167, 142, 0.04);
+  border: 1px solid rgba(0, 167, 142, 0.1);
+  transition: 0.3s;
+}
+
+.marine_details_page .marine_feature_item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 167, 142, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 167, 142, 0.08);
+}
+
+.marine_details_page .marine_feature_item h5 {
+  margin-top: 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.marine_details_page .marine_feature_item p {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 22px;
+  color: var(--color-text);
+}
+
 @media (max-width: 991px) {
   .shyaway_details_page .shyaway_story_text {
     padding: 24px;
@@ -1190,6 +1421,28 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   .shyaway_details_page .shyaway_hero_visual {
     min-height: 460px;
     margin-top: 28px;
+  }
+
+  .marine_details_page .marine_hero_area {
+    padding: 52px 0 40px;
+  }
+
+  .marine_details_page .marine_hero_content {
+    max-width: 100%;
+  }
+
+  .marine_details_page .marine_hero_visual {
+    justify-content: center;
+    padding: 12px 0 0;
+  }
+
+  .marine_details_page .marine_screen_primary {
+    width: min(100%, 560px);
+    margin-left: 0;
+  }
+
+  .marine_details_page .marine_tools_card {
+    margin-top: 30px;
   }
 }
 
@@ -1208,6 +1461,18 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 
   .shyaway_details_page .shyaway_phone {
     width: min(48%, 180px);
+  }
+
+  .marine_details_page .marine_hero_area {
+    padding: 42px 0 34px;
+  }
+
+  .marine_details_page .marine_screen_primary {
+    width: min(100%, 360px);
+  }
+
+  .marine_details_page .marine_tools_card {
+    padding: 24px 20px;
   }
 }
 
