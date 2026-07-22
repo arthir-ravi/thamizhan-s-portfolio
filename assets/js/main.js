@@ -20,7 +20,10 @@ $(function () {
     $navbarPlaceholder.load(
       basePath + "components/navbar.html",
       function () {
-        if (basePath && basePath !== "") {
+        var logoPath = (basePath || "") + "assets/images/fav/favicon.ico";
+        $navbarPlaceholder.find(".navbar-brand img").attr("src", logoPath);
+        $navbarPlaceholder.find(".navbar-brand").attr("href", basePath || "./");
+        if (basePath) {
           $navbarPlaceholder.find("a.page-scroll").each(function () {
             var href = $(this).attr("href");
             if (href && href.charAt(0) === "#") {
