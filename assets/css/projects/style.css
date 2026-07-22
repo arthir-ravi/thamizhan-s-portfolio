@@ -440,6 +440,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 
 .slider_image_page .project_showcase_wrapper {
   max-width: 700px;
+  margin: 0 auto;
 }
 .slider_image_page .project_showcase_card {
   background: transparent !important;
@@ -634,16 +635,6 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   margin-bottom: 18px;
 }
 
-.shelfperks_details_page .project_meta_card .project_section_icon,
-.shyaway_details_page .project_meta_card .project_section_icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  font-size: 16px;
-  background: rgba(0, 167, 142, 0.12);
-  color: var(--color-primary);
-}
-
 .shelfperks_details_page .project_meta_card .project_section_head h3,
 .shyaway_details_page .project_meta_card .project_section_head h3 {
   padding-bottom: 10px;
@@ -835,7 +826,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
     padding-right: 15px;
   }
 }
-
+.shyaway_about_area
 .mail_automation_page .mail_automation_hero {
   padding: 70px 0 42px;
   background: var(--color-white);
@@ -1067,7 +1058,9 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 
   .mail_automation_page .mail_video_feature + .mail_video_feature {
     border-left: 0;
+    border-top: 1px solid rgba(0, 167, 142, 0.15);
     padding-left: 0;
+    padding-top: 16px;
   }
 
   .product_analysis_page .mail_video_panel {
@@ -1161,6 +1154,14 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   border-radius: 12px;
   background: rgba(0, 167, 142, 0.04);
   border: 1px solid rgba(0, 167, 142, 0.1);
+  transition: 0.3s;
+}
+
+.shyaway_impact_item:hover,
+.shyaway_details_page .shyaway_impact_item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 167, 142, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 167, 142, 0.08);
 }
 
 .shyaway_details_page .shyaway_impact_item h5 {
@@ -1209,3 +1210,225 @@ body.inner_page .navbar-nav .nav-item:hover > a {
     width: min(48%, 180px);
   }
 }
+
+/*======================================
+    SOLVE EOD Feature Cards Grid
+======================================*/
+
+.solve_eod_features_grid {
+  row-gap: 24px;
+  margin-top: 24px;
+}
+
+.solve_eod_feature_item {
+  height: 100%;
+  padding: 24px 20px;
+  border-radius: 12px;
+  background: rgba(0, 167, 142, 0.04);
+  border: 1px solid rgba(0, 167, 142, 0.1);
+  transition: 0.3s;
+}
+
+.solve_eod_feature_item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 167, 142, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 167, 142, 0.08);
+}
+
+.solve_eod_feature_item h5 {
+  margin-top: 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.solve_eod_feature_item p {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 22px;
+  color: var(--color-text);
+}
+
+/*======================================
+    Fuel Apps Page Styles
+======================================*/
+.fuel_hero_features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 24px;
+  padding: 16px 14px;
+  border-radius: 12px;
+  background: rgba(0, 167, 142, 0.04);
+  border: 1px solid rgba(0, 167, 142, 0.12);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fuel_hero_feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 0;
+}
+
+.fuel_hero_feature + .fuel_hero_feature {
+  border-left: 1px solid rgba(0, 167, 142, 0.15);
+  padding-left: 10px;
+}
+
+.fuel_hero_feature .project_feature_icon {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border: 1px solid rgba(0, 167, 142, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 167, 142, 0.08);
+}
+
+.fuel_hero_feature .project_feature_text {
+  padding-top: 1px;
+  min-width: 0;
+}
+
+.fuel_hero_feature .project_feature_text h5 {
+  margin-bottom: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-heading);
+  line-height: 1.25;
+}
+
+.fuel_hero_feature .project_feature_text p {
+  margin: 0;
+  font-size: 11.5px;
+  color: var(--color-text);
+  line-height: 1.25;
+}
+
+.fuel_hero_visual img {
+  display: block;
+  width: min(100%, 540px);
+  height: auto;
+  margin: 0 auto;
+}
+
+.fuel_about_visual img {
+  display: block;
+  width: min(100%, 460px);
+  height: auto;
+  margin: 0 auto;
+}
+
+.fuel_meta_visual img {
+  display: block;
+  width: min(100%, 420px);
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .fuel_about_visual {
+    margin-top: 30px;
+  }
+  .fuel_meta_visual {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fuel_hero_features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 18px 16px;
+  }
+  .fuel_hero_feature + .fuel_hero_feature {
+    border-left: none;
+    border-top: 1px solid rgba(0, 167, 142, 0.15);
+    padding-left: 0;
+    padding-top: 16px;
+  }
+}
+
+/*======================================
+    ChargeDock Page Styles
+======================================*/
+.chargedock_hero_visual img {
+  display: block;
+  width: min(100%, 300px);
+  height: auto;
+  margin: 0 auto;
+}
+
+.chargedock_about_visual img {
+  display: block;
+  width: min(100%, 480px);
+  height: auto;
+  margin: 0 auto;
+}
+
+.chargedock_meta_visual img {
+  display: block;
+  width: min(100%, 440px);
+  height: auto;
+  margin: 0 auto;
+}
+
+.chargedock_impact_item {
+  height: 100%;
+  padding: 24px;
+  border-radius: 12px;
+  background: rgba(0, 167, 142, 0.04);
+  border: 1px solid rgba(0, 167, 142, 0.1);
+  transition: 0.3s;
+}
+
+.chargedock_impact_item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 167, 142, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 167, 142, 0.08);
+}
+
+.chargedock_impact_item .project_feature_icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-white);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  border: 1px solid rgba(0, 167, 142, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 167, 142, 0.08);
+}
+
+.chargedock_impact_item h5 {
+  margin-top: 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.chargedock_impact_item p {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 22px;
+  color: var(--color-text);
+}
+
+@media (max-width: 991px) {
+  .chargedock_about_visual {
+    margin-top: 30px;
+  }
+  .chargedock_meta_visual {
+    margin-bottom: 30px;
+  }
+}
+
