@@ -1000,8 +1000,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   margin: 0 0 26px;
   padding: 24px;
   border-radius: 14px;
-  background: var(--color-white);
-  border: 1px solid rgba(41, 54, 81, 0.08);
+  background: rgba(0, 167, 142, 0.04);
+  border: 1px solid rgba(0, 167, 142, 0.12);
   box-shadow: 0 14px 34px rgba(41, 54, 81, 0.06);
 }
 

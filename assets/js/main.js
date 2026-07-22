@@ -10,7 +10,7 @@ $(function () {
   var $footerPlaceholder = $("#footer-placeholder");
   if ($footerPlaceholder.length) {
     var basePath = $footerPlaceholder.data("base-path") || "";
-    $footerPlaceholder.load(basePath + "assets/components/footer.html");
+    $footerPlaceholder.load(basePath + "components/footer.html");
   }
 
   //===== Load Reusable Navbar Component
@@ -18,7 +18,7 @@ $(function () {
   if ($navbarPlaceholder.length) {
     var basePath = $navbarPlaceholder.data("base-path") || "";
     $navbarPlaceholder.load(
-      basePath + "assets/components/navbar.html",
+      basePath + "components/navbar.html",
       function () {
         if (basePath && basePath !== "") {
           $navbarPlaceholder.find("a.page-scroll").each(function () {
