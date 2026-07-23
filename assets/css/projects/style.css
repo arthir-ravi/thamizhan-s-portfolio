@@ -1127,6 +1127,102 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   padding-bottom: 80px;
 }
 
+/*======================================
+    Odoo AI Business Reporter Page
+======================================*/
+
+.odoo_reporter_page .container {
+  max-width: 1120px;
+}
+
+.odoo_reporter_intro {
+  padding: 70px 0 54px;
+  background: var(--color-white);
+}
+
+.odoo_reporter_media {
+  padding: 0 0 80px;
+  background: var(--color-white);
+}
+
+.odoo_reporter_row {
+  row-gap: 34px;
+}
+
+.odoo_reporter_page .project_title {
+  max-width: 560px;
+}
+
+.odoo_reporter_page .project_about_text p {
+  max-width: 620px;
+}
+
+.odoo_reporter_media .ai_receptionist_panel {
+  margin-top: 0;
+}
+
+.marketplace_showcase_area {
+  padding: 0 0 70px;
+}
+
+.marketplace_showcase_area .project_showcase_wrapper {
+  max-width: 100%;
+  margin: 0;
+}
+
+.marketplace_showcase_area .project_showcase_slide_area {
+  gap: 34px;
+}
+
+.marketplace_showcase_area .project_showcase_slider {
+  aspect-ratio: 1402 / 1122;
+}
+
+.marketplace_showcase_area .project_showcase_slider .owl-stage-outer,
+.marketplace_showcase_area .project_showcase_slider .owl-stage,
+.marketplace_showcase_area .project_showcase_slider .owl-item {
+  height: 100%;
+}
+
+.marketplace_showcase_area .project_showcase_slider .showcase_slide {
+  object-fit: contain;
+  object-position: center;
+}
+
+.ai_receptionist_page .ai_impact_grid{
+  row-gap: 16px;
+}
+
+.ai_receptionist_page .ai_impact_item{
+  padding: 18px 20px;
+}
+
+.ai_receptionist_page .feature_heading{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.ai_receptionist_page .feature_heading .project_feature_icon{
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  font-size: 16px;
+}
+
+.ai_receptionist_page .feature_heading h5{
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.ai_receptionist_page .ai_impact_item p{
+  margin: 0;
+  font-size: 13px;
+  line-height: 20px;
+}
+
 @media (min-width: 992px) {
   .mail_automation_page .mail_automation_content {
     padding-right: 18px;
@@ -1134,6 +1230,10 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 
   .ai_receptionist_page .mail_automation_content {
     padding-right: 0;
+  }
+
+  .odoo_reporter_page .mail_automation_content {
+    padding-right: 36px;
   }
 }
 
@@ -1167,6 +1267,19 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   .mail_automation_page .project_title,
   .mail_automation_page .project_about_text p {
     max-width: 100%;
+  }
+
+  .odoo_reporter_intro {
+    padding-top: 54px;
+  }
+
+  .odoo_reporter_page .project_title,
+  .odoo_reporter_page .project_about_text p {
+    max-width: 100%;
+  }
+
+  .marketplace_showcase_area .project_showcase_slide_area {
+    gap: 20px;
   }
 }
 
@@ -1206,6 +1319,14 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 
   .product_qa_page .mail_video_features {
     padding: 22px 18px;
+  }
+
+  .marketplace_showcase_area {
+    padding-bottom: 46px;
+  }
+
+  .marketplace_showcase_area .project_showcase_slide_area {
+    gap: 0;
   }
 }
 
@@ -1696,4 +1817,3 @@ body.inner_page .navbar-nav .nav-item:hover > a {
     margin-bottom: 30px;
   }
 }
-
