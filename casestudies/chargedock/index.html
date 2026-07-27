@@ -31,26 +31,50 @@
 
     <!-- Schema.org for Google -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "ChargeDock Case Study - Enhancing EV Charging Experience",
-        "description": "Learn how ChargeDock provides a seamless EV charging experience by locating charge stations, monitoring charge levels, and remotely controlling charging sessions.",
-        "author": {
-          "@type": "Person",
-          "name": "Thamizhan S"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "Thamizhan S",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://arthir-ravi.github.io/thamizhan-s-portfolio/assets/images/fav/android-chrome-512x512.png"
-          }
-        },
-        "datePublished": "2026-07-22",
-        "mainEntityOfPage": "https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/chargedock"
-      }
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "TechArticle",
+              "@id": "https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/chargedock#article",
+              "headline": "ChargeDock Case Study - Enhancing EV Charging Experience",
+              "description": "Learn how ChargeDock provides a seamless EV charging experience by locating charge stations, monitoring charge levels, and remotely controlling charging sessions.",
+              "image": {
+                "@type": "ImageObject",
+                "url": "https://arthir-ravi.github.io/thamizhan-s-portfolio/assets/images/projects/charge/charge2.webp"
+              },
+              "author": { "@id": "https://arthir-ravi.github.io/thamizhan-s-portfolio/#person" },
+              "publisher": { "@id": "https://arthir-ravi.github.io/thamizhan-s-portfolio/#person" },
+              "datePublished": "2026-07-22",
+              "dateModified": "2026-07-27",
+              "inLanguage": "en",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/chargedock"
+              },
+              "keywords": ["ChargeDock", "EV Charging", "Electric Vehicles", "Charging Station Locator", "Real Time Monitoring", "Remote Charging", "Charging Efficiency"],
+              "about": ["Electric Vehicles", "EV Charging", "Charging Infrastructure", "Mobile Application", "Smart Charging"]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/chargedock#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://arthir-ravi.github.io/thamizhan-s-portfolio/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "ChargeDock",
+                  "item": "https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/chargedock"
+                }
+              ]
+            }
+          ]
+        }
     </script>
 
     <link rel="stylesheet" href="../../assets/css/animate.css">
@@ -129,7 +153,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="chargedock_about_visual">
-                            <img src="../../assets/images/projects/charge/charge2.webp" alt="ChargeDock active charging timer & favorite docks">
+                            <img src="../../assets/images/projects/charge/charge2.webp" alt="ChargeDock map view and station details screen">
                         </div>
                     </div>
                 </div>
@@ -183,7 +207,7 @@
                             <span class="tool_pill">Firebase</span>
                             <span class="tool_pill">QR Scan</span>
                             <span class="tool_pill">MongoDB</span>
-                            <span class="tool_pill">NodeJs</span>
+                            <span class="tool_pill">Node.js</span>
                             <span class="tool_pill">Angular</span>
                             <span class="tool_pill">Socket.io</span>
                         </div>
