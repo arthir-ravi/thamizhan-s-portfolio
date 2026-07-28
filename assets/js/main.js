@@ -10,7 +10,16 @@ $(function () {
   var $footerPlaceholder = $("#footer-placeholder");
   if ($footerPlaceholder.length) {
     var basePath = $footerPlaceholder.data("base-path") || "";
-    $footerPlaceholder.load(basePath + "components/footer.html");
+    $footerPlaceholder.load(basePath + "components/footer.html", function () {
+      $footerPlaceholder.find(".footer_faq_link").attr("href", basePath + "faq");
+      if ($("body").hasClass("faq_page")) {
+        $footerPlaceholder.find('a[href="index.html#footer"]').attr("href", "#footer");
+      }
+    });
+  }
+
+  if ($("body").hasClass("faq_page") && window.history && window.location.pathname.slice(-5) === "/faq/") {
+    window.history.replaceState(null, "", window.location.pathname.slice(0, -1) + window.location.search + window.location.hash);
   }
 
   //===== Load Reusable Navbar Component

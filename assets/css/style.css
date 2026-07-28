@@ -2905,6 +2905,179 @@ p {
   color: var(--color-primary);
 }
 
+/*===== FAQ Page Style =====*/
+.faq_page .faq_area {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(229, 248, 244, 0.82) 0%, rgba(249, 252, 252, 0.94) 35%, var(--color-white) 100%);
+}
+
+.faq_page .faq_area::before,
+.faq_page .faq_area::after {
+  position: absolute;
+  content: "";
+  pointer-events: none;
+}
+
+.faq_page .faq_area::before {
+  left: -70px;
+  top: 95px;
+  width: 330px;
+  height: 230px;
+  border-top: 1px solid rgba(0, 167, 142, 0.16);
+  border-radius: 50%;
+}
+
+.faq_page .faq_area::after {
+  right: 38px;
+  top: 35px;
+  width: 130px;
+  height: 130px;
+  opacity: 0.32;
+  background-image: radial-gradient(rgba(0, 167, 142, 0.2) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+.faq_page .faq_area .container {
+  position: relative;
+  z-index: 1;
+}
+
+.faq_bg_icon {
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.faq_bg_icon_large {
+  left: 8%;
+  top: 74px;
+  width: 86px;
+  height: 86px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #48cf95 0%, #21aa8f 100%);
+  color: var(--color-white);
+  box-shadow: 0 22px 40px rgba(0, 167, 142, 0.24);
+  transform: rotate(-8deg);
+}
+
+.faq_bg_icon_large i {
+  font-size: 42px;
+}
+
+.faq_bg_icon_small {
+  right: 10%;
+  top: 86px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(0, 167, 142, 0.18);
+  color: var(--color-white);
+  box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.36);
+}
+
+.faq_bg_icon_small i {
+  font-size: 26px;
+}
+
+.faq_intro {
+  margin-top: 18px;
+}
+
+.faq_item {
+  margin-top: 14px;
+  border: 1px solid var(--color-border-light);
+  border-radius: 5px;
+  background: var(--color-white);
+  box-shadow: 0 8px 24px rgba(41, 54, 81, 0.06);
+}
+
+.faq_item:first-child {
+  margin-top: 0;
+}
+
+.faq_item summary {
+  min-height: 64px;
+  padding: 18px 24px;
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) 16px;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq_item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq_item summary span {
+  color: var(--color-heading);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.faq_item[open] summary span:not(.faq_toggle_icon) {
+  color: var(--color-primary);
+}
+
+.faq_toggle_icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(0, 167, 142, 0.08);
+  color: var(--color-primary);
+}
+
+.faq_toggle_icon::before,
+.faq_toggle_icon::after {
+  position: absolute;
+  content: "";
+  left: 7px;
+  top: 11px;
+  width: 10px;
+  height: 2px;
+  border-radius: 4px;
+  background: currentColor;
+}
+
+.faq_toggle_icon::after {
+  transform: rotate(90deg);
+}
+
+.faq_item[open] .faq_toggle_icon {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.faq_item[open] .faq_toggle_icon::after {
+  display: none;
+}
+
+.faq_item summary i {
+  justify-self: end;
+  color: var(--color-primary);
+  font-size: 14px;
+  transition: transform 0.3s ease-out 0s;
+}
+
+.faq_item[open] summary i {
+  transform: rotate(180deg);
+}
+
+.faq_item p {
+  padding: 0 24px 24px;
+  font-size: 15px;
+  line-height: 26px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer_cta {
     padding: 38px 34px;
@@ -2916,6 +3089,40 @@ p {
 }
 
 @media (max-width: 767px) {
+  .faq_page .faq_area::before {
+    left: -170px;
+    top: 120px;
+  }
+
+  .faq_page .faq_area::after {
+    right: -20px;
+    top: 20px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .faq_bg_icon {
+    display: none;
+  }
+
+  .faq_item summary {
+    min-height: 58px;
+    padding: 16px 18px;
+    grid-template-columns: 24px minmax(0, 1fr) 14px;
+    gap: 14px;
+  }
+
+  .faq_item summary span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .faq_item p {
+    padding: 0 18px 20px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
   .footer_cta_area {
     padding: 70px 0 88px;
   }
