@@ -18,10 +18,6 @@ $(function () {
     });
   }
 
-  if ($("body").hasClass("faq_page") && window.history && window.location.pathname.slice(-5) === "/faq/") {
-    window.history.replaceState(null, "", window.location.pathname.slice(0, -1) + window.location.search + window.location.hash);
-  }
-
   //===== Load Reusable Navbar Component
   var $navbarPlaceholder = $("#navbar-placeholder");
   if ($navbarPlaceholder.length) {
