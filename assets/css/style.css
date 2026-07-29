@@ -1359,11 +1359,6 @@ p {
   color: var(--color-primary);
 }
 
-.about_stat_item:last-child h4 {
-  font-size: 17px;
-  line-height: 1.35;
-}
-
 .about_stat_item p {
   margin-top: 10px;
   color: var(--color-heading);
@@ -1606,9 +1601,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 110px;
-  height: 110px;
-  padding: 10px;
+  width: 124px;
+  height: 124px;
+  padding: 0;
   margin: 0 auto;
   -webkit-transition: transform 0.3s ease-out 0s;
   -moz-transition: transform 0.3s ease-out 0s;
@@ -1626,8 +1621,9 @@ p {
 }
 
 .technology_icon .tech_logo {
-  max-width: 100%;
-  max-height: 100%;
+  display: block;
+  width: 104px;
+  height: 104px;
   object-fit: contain;
   margin: 0 auto;
 }
@@ -1678,19 +1674,19 @@ p {
   }
 
   .technology_icon {
-    width: 120px;
-    height: 120px;
-    padding: 10px;
+    width: 124px;
+    height: 124px;
+    padding: 0;
   }
 
   .technology_item::before {
-    top: 63px;
-    right: calc(50% + 60px);
-    width: calc(100% - 120px + var(--tech-carousel-gap));
+    top: 65px;
+    right: calc(50% + 62px);
+    width: calc(100% - 124px + var(--tech-carousel-gap));
   }
 
   .technology_item::after {
-    top: 59px;
+    top: 61px;
   }
 }
 
@@ -1727,19 +1723,24 @@ p {
   }
 
   .technology_icon {
-    width: 120px;
-    height: 120px;
-    padding: 15px;
+    width: 116px;
+    height: 116px;
+    padding: 0;
+  }
+
+  .technology_icon .tech_logo {
+    width: 100px;
+    height: 100px;
   }
 
   .technology_item::before {
-    top: 63px;
-    right: calc(50% + 60px);
-    width: calc(100% - 120px + var(--tech-carousel-gap));
+    top: 61px;
+    right: calc(50% + 58px);
+    width: calc(100% - 116px + var(--tech-carousel-gap));
   }
 
   .technology_item::after {
-    top: 59px;
+    top: 57px;
   }
 }
 
@@ -1751,14 +1752,19 @@ p {
   }
 
   .technology_icon {
-    width: 100px;
-    height: 100px;
-    padding: 12px;
+    width: 108px;
+    height: 108px;
+    padding: 0;
+  }
+
+  .technology_icon .tech_logo {
+    width: 90px;
+    height: 90px;
   }
 
   .technology_item::before {
-    right: calc(50% + 50px);
-    width: calc(100% - 100px + var(--tech-carousel-gap));
+    right: calc(50% + 54px);
+    width: calc(100% - 108px + var(--tech-carousel-gap));
   }
 }
 
@@ -2392,7 +2398,7 @@ p {
   transition: all 0.3s ease-out 0s;
 }
 
-.project_content h4 a{
+.project_content h4 a {
   color: var(--color-heading);
 }
 
@@ -2517,7 +2523,6 @@ p {
     font-size: 12px;
     line-height: 22px;
   }
-
 }
 
 /*==================================
@@ -2830,7 +2835,7 @@ p {
 }
 
 .footer_main {
-  padding: 90px 0 95px;
+  padding: 32px 0 36px;
   background-color: #f8f8f8;
 }
 
@@ -2865,12 +2870,6 @@ p {
   color: var(--color-white);
   background-color: var(--color-primary);
 }
-.footer_content .email {
-  font-size: 44px;
-  font-weight: 600;
-  color: var(--color-heading);
-  margin-top: 18px;
-}
 .footer_content .footer_menu {
   padding-top: 24px;
   display: flex;
@@ -2901,7 +2900,7 @@ p {
   font-weight: 300;
   line-height: 24px;
 }
-.footer_content .copyright span{
+.footer_content .copyright span {
   color: var(--color-primary);
 }
 
@@ -2909,8 +2908,12 @@ p {
 .faq_page .faq_area {
   position: relative;
   overflow: hidden;
-  background:
-    linear-gradient(180deg, rgba(229, 248, 244, 0.82) 0%, rgba(249, 252, 252, 0.94) 35%, var(--color-white) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(229, 248, 244, 0.82) 0%,
+    rgba(249, 252, 252, 0.94) 35%,
+    var(--color-white) 100%
+  );
 }
 
 .faq_page .faq_area::before,
@@ -2935,7 +2938,10 @@ p {
   width: 130px;
   height: 130px;
   opacity: 0.32;
-  background-image: radial-gradient(rgba(0, 167, 142, 0.2) 1px, transparent 1px);
+  background-image: radial-gradient(
+    rgba(0, 167, 142, 0.2) 1px,
+    transparent 1px
+  );
   background-size: 12px 12px;
 }
 
@@ -3082,10 +3088,6 @@ p {
   .footer_cta {
     padding: 38px 34px;
   }
-
-  .footer_content .email {
-    font-size: 26px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -3165,16 +3167,8 @@ p {
   }
 
   .footer_main {
-    padding: 65px 0 70px;
+    padding: 24px 0 28px;
   }
-
-  .footer_content .email {
-    max-width: 100%;
-    font-size: 20px;
-    margin-top: 25px;
-    word-break: break-word;
-  }
-
   .footer_content .footer_menu li {
     margin: 10px 12px 0;
   }
@@ -3188,9 +3182,5 @@ p {
 
   .footer_cta_content h3 {
     font-size: 20px;
-  }
-
-  .footer_content .email {
-    font-size: 18px;
   }
 }

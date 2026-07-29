@@ -1190,11 +1190,11 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 }
 
 .ai_receptionist_page .ai_impact_grid{
-  row-gap: 16px;
+  row-gap: 24px;
 }
 
 .ai_receptionist_page .ai_impact_item{
-  padding: 18px 20px;
+  padding: 24px;
 }
 
 .ai_receptionist_page .feature_heading{
@@ -1218,9 +1218,9 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 }
 
 .ai_receptionist_page .ai_impact_item p{
-  margin: 0;
+  margin-top: 10px;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 @media (min-width: 992px) {
