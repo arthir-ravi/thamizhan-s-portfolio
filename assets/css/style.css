@@ -2329,6 +2329,7 @@ p {
 }
 
 .projects_grid {
+  position: relative;
   margin-top: 0;
 }
 
@@ -2420,26 +2421,42 @@ p {
 }
 
 .projects_grid .owl-nav {
-  margin-top: 28px;
-  text-align: center;
+  position: absolute;
+  top: 42%;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  margin-top: 0;
+  pointer-events: none;
 }
 
 .projects_grid .owl-nav button {
+  position: absolute;
+  top: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
-  margin: 0 6px;
+  margin: 0;
   border: 1px solid rgba(0, 167, 142, 0.18) !important;
   border-radius: 30px;
   color: var(--color-primary) !important;
   background: var(--color-white) !important;
+  pointer-events: auto;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+}
+
+.projects_grid .owl-nav button.owl-prev {
+  left: 14px;
+}
+
+.projects_grid .owl-nav button.owl-next {
+  right: 14px;
 }
 
 .projects_grid .owl-nav button:hover {

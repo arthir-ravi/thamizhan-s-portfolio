@@ -1,6 +1,6 @@
 # Thamizhan S — AI Agent & Full-Stack Engineer
 
-> Thamizhan S ("Tamil") is an AI Agent & Full-Stack Engineer based in Pondicherry, India, with 14+ years of experience building intelligent automation systems, scalable web platforms, and high-quality mobile applications for premium clients globally.
+> Thamizhan S ("Tamil") is an AI Agent & Full-Stack Engineer based in Pondicherry, India, with 14 years of experience building intelligent automation systems, scalable web platforms, and high-quality mobile applications for premium clients globally.
 
 Contact: thamizhan.04@gmail.com
 Hire: https://www.upwork.com/freelancers/~01fb3999d8b8341024
@@ -68,4 +68,4 @@ Tools: Figma, Postman, GitHub, Jira, Streamlit
 
 - 200+ projects completed
 - 20+ AI agents built
-- 14+ years of experience
+- 14 years of experience
