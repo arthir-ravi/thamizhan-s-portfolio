@@ -1,6 +1,9 @@
 # Thamizhan S — AI Agent & Full-Stack Engineer
 
-> Thamizhan S ("Tamil") is an AI Agent & Full-Stack Engineer based in Pondicherry, India, with 14 years of experience building intelligent automation systems, scalable web platforms, and high-quality mobile applications for premium clients globally.
+> I am Thamizhan S ("Tamil"), an AI Agent & Full-Stack Engineer based in Pondicherry, India. I have 14 years of experience designing and building intelligent automation systems,
+scalable web platforms, cloud-ready backend systems, and high-quality mobile applications for premium clients globally. My work covers AI agents, RAG pipelines, workflow automation,
+API integrations, full-stack product development, mobile engineering, system architecture, DevOps automation, and cloud infrastructure. I focus on turning complex business operations
+into reliable digital products that are practical to use, easy to scale, and ready for real-world deployment.
 
 Contact: thamizhan.04@gmail.com
 Hire: https://www.upwork.com/freelancers/~01fb3999d8b8341024
@@ -9,15 +12,32 @@ LinkedIn: https://www.linkedin.com/in/thamizhans
 
 ## Services
 
-- AI Agent Development — Conversational AI agents, voice agents, and vision agents for business automation
-- AI Automation & Integration — Workflow automation using n8n, Make.com, and custom connectors
-- Full-Stack Web Development — React, Next.js, Node.js, Nest.js with cloud native architectures
-- Mobile App Development — Native Android (Kotlin), iOS (Swift), React Native, Flutter
-- Architecture Design — Scalable system design, microservices, API integrations
-- RAG Systems — Retrieval Augmented Generation pipelines with LangChain, Supabase, Pinecone
-- Product Consulting — MVP strategy, technical roadmaps, product launch support
-- DevOps Automation — CI/CD pipelines, Docker, AWS, GCP deployments
-- Cloud Infrastructure Management — AWS, Azure, GCP environments
+- AI Agent Development
+  Builds AI-driven applications that understand user intent, respond naturally, and automate business processes through intelligent agent workflows.
+
+- Architecture Design
+  Designs robust, scalable, and efficient system architectures that support complex product functionality and high user loads.
+
+- Custom App Development
+  Develops custom web, mobile, and prototype applications based on product goals, user needs, and business workflows.
+
+- AI Automation & Integration
+  Connects APIs and automates business operations using n8n, Make.com, custom connectors, and AI-powered workflow logic.
+
+- Full Stack Web Development
+  Builds secure and scalable web platforms by integrating databases, APIs, cloud services, and optimized frontend/backend systems.
+
+- Product Consulting
+  Provides strategic and technical guidance for turning ideas into launched products, including MVP planning, product direction, and app delivery.
+
+- DevOps Automation
+  Automates delivery workflows, improves collaboration, and supports faster release cycles through DevOps practices and deployment pipelines.
+
+- Cloud Infra Management
+  Architects and manages secure cloud environments across AWS, Microsoft Azure, and GCP with focus on scalability, efficiency, and reliability.
+
+- Workflow Orchestration
+  Designs scalable automation workflows that connect multiple systems, APIs, and AI agents to reduce repetitive work and streamline operations.
 
 ## Technologies
 
@@ -31,38 +51,139 @@ Tools: Figma, Postman, GitHub, Jira, Streamlit
 
 ## Portfolio — Case Studies
 
-- [AI Lead Outreach Automation](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/ai-lead-outreach) — B2B lead enrichment and personalized outreach via Clay, n8n, OpenAI, WhatsApp
-- [AI Receptionist](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/ai-receptionist) — Voice AI agent for hospital appointment booking and patient call handling
-- [AI Virtual Receptionist](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/ai-virtual-receptionist) — Multi channel (video/voice/chat) reception automation for enterprises
-- [Automated Mail](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/automated-mail) — Intelligent email scheduling and tracking automation system
-- [ChargeDock](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/chargedock) — EV charging station locator and remote charge monitoring mobile app
-- [Equs](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/equs) — Blockchain backed digital identity and credential verification platform
-- [FuelUp](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/fuel-app) — Restaurant ordering, delivery and operations management ecosystem (FuelUp, FuelChef, FuelDash)
-- [Law Agent](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/lawagent) — Conversational AI for legal research using RAG and LLMs
-- [MR Marine](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/marine) — Maritime operations management with real time field tracking
-- [Marketplace](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/marketplace) — Local buying and selling platform with category/city filters and real time messaging
-- [Misolah](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/misolah) — Smart marketplace connecting event organizers with photographers
-- [Nova Earn](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/nova-earn) — Customer loyalty and engagement management app with QR voucher system
-- [Odoo AI Business Reporter](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/odoo-ai-business-reporter) — WhatsApp based AI business intelligence for Odoo ERP data
-- [Product Analysis](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/product-analysis) — AI powered PDF processing and knowledge extraction via n8n, Gemini, Supabase
-- [Product QA](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/product-qa) — RAG chatbot for enterprise PDF document querying using Make.com and Gemini AI
-- [ShelfPerks](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/shelf-perks) — Retail operations management platform for store owners
-- [ShelfScan](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/shelf-scan) — Vision AI agent for retail shelf stock detection and audit automation
-- [Shyaway](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/shyaway) — E commerce mobile app for lingerie brand with personalized recommendations
-- [Solve EOD](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/solve-eod) — Centralised operations management and secure reporting platform
-- [Stree F&B](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/stree) — AI powered customer engagement automation across Email and WhatsApp
+- [AI Lead Outreach Automation](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/ai-lead-outreach)
+  End-to-end B2B lead nurturing system built with Clay, n8n, Supabase, Gmail, Evolution API, OpenRouter, Claude, and OpenAI. 
+  It collects and enriches prospect data from multiple sources, stores structured lead records in Supabase, analyzes each company by services, 
+  reviews, and business stage, then generates personalized partnership emails and WhatsApp messages. 
+  The workflow removes repetitive prospect research and follow-up work while keeping outreach context aware across channels.
+
+- [AI Receptionist](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/ai-receptionist)
+  Voice agent for hospitals and clinics built with Vapi.ai, n8n, Slack, and Google Calendar. It answers patient calls, checks doctor availability, 
+  books appointments, and sends call summaries or notifications to staff and patients. The system gives patients a faster booking flow while reducing 
+  front-desk workload and missed call pressure for healthcare teams.
+
+- [AI Virtual Receptionist](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/ai-virtual-receptionist)
+  Multi-channel receptionist automation for hospitals, clinics, schools, salons, corporate offices, and service centers. Built with TrueGen AI, n8n, Slack, Google Sheets, 
+  Webhooks, and Google Calendar, it handles video calls, voice calls, and chat conversations for appointments, availability checks, rescheduling, confirmations, FAQs, 
+  and interruption handling. The platform is designed as a reusable reception layer that can be adapted across industries.
+
+- [Automated Mail](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/automated-mail)
+  Email workflow automation built with n8n, Google Sheets, Gmail, Slack, LangChain, OpenAI, Gemini, Claude, HuggingFace, Anthropic, and Vertex AI. 
+  It reads campaign data from Google Sheets, applies business rules, schedules personalized emails through Gmail, respects sending limits, and writes delivery 
+  logs back to Sheets for auditability. The automation gave non-technical teams a familiar spreadsheet-based control panel and reduced customer success workload by 85%.
+
+- [ChargeDock](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/chargedock)
+  EV charging station finder and smart charging app built with Flutter, Firebase, MongoDB, Node.js, Angular, Socket.io, QR scanning, GPS maps, and Fastlane. 
+  Users can find nearby chargers, monitor vehicle charge levels in real time, control charging sessions remotely, and receive low-charge notifications. 
+  The product improves access to charging infrastructure, helps reduce range anxiety, and lets EV owners manage charging time more efficiently.
+
+- [Equs](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/equs)
+  Blockchain-backed identity and credential platform for secure digital identity, verifiable credentials, selective disclosure, and business verification. 
+  Built for iOS and Android with blockchain and crypto wallet support, secure APIs, encryption, Swagger, Postman, GitLab, Jira, Figma, Android Studio, and Xcode. 
+  Users can manage credentials and blockchain assets in one wallet, share only selected information, and let businesses verify records quickly to reduce fraud and 
+  onboarding friction.
+
+- [FuelUp](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/fuel-app)
+  Restaurant ordering, kitchen operations, and delivery platform for the Beefhouse restaurant chain in France. The ecosystem includes FuelUp for customer ordering, 
+  FuelChef for server and kitchen coordination, and FuelDash for delivery operations. Built with Flutter, Android, iOS, Dart, Firebase, OneSignal, GPS maps, Apple Pay, 
+  Stripe, in-app payments, Fastlane, Figma, Postman, Trello, GitHub, and Zeplin, it supports in-app orders, in-shop orders, real-time tracking, kitchen updates, 
+  route optimization, and payment flows.
+
+- [Law Agent](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/lawagent)
+  Conversational legal research assistant built with LangChain, RAG, Streamlit, Docker, PyPDF, HuggingFace, Claude, OpenAI, Gemini, Anthropic, Vertex AI, and Slack. 
+  It lets users ask legal questions in plain language, searches legal documents, retrieves relevant context, and returns clear answers from a secure workflow. The system 
+  reduces research time, improves access to legal information, and supports both professionals and individuals without requiring deep legal search expertise.
+
+- [MR Marine](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/marine)
+  Mobile-first maritime field operations tracker built with Flutter, Dart, PHP, Firebase, ERP integration, GitLab, and Adobe XD. It helps maritime teams manage onsite operations, 
+  shipment visibility, field reporting, communication, and stakeholder collaboration. The app replaces fragmented communication and manual processes with shared reporting, 
+  real-time insights, workflow automation, and better productivity across supply chain operations.
+
+- [Marketplace](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/marketplace)
+  Local buying and selling web platform built with Next.js, React, Node.js, Strapi, MySQL, Tailwind CSS, Docker, Nodemailer, Slack, and Postman. Users can create product listings, browse by category and city, search with filters, and chat directly with sellers in real time. The platform improves local product discovery, supports multilingual regional use, and gives sellers a scalable way to publish, manage, and promote listings.
+
+- [Misolah](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/misolah)
+  Photography and event booking marketplace built with Node.js, PostgreSQL, Firebase, FCM, Docker, GitLab, Postman, Slack, Figma, Android, iOS, Fastlane, Android Studio, and Xcode. 
+  Event organizers can post requirements, receive competitive bids, review verified photographer profiles, compare portfolios and reviews, and communicate through real-time messaging. 
+  Photographers get SEO-optimized listings, profile management, portfolio showcases, notifications, and promotional tools to grow bookings.
+
+- [Nova Earn](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/nova-earn)
+  QR-based loyalty and rewards platform built with React, Node.js, PostgreSQL, AWS, Docker, Bootstrap, CI/CD, GitLab, Jira, SourceTree, Zeplin, Slack, and Postman. Customers earn 
+  points, convert them into QR vouchers, and redeem them securely at checkout across multiple business branches. Businesses can manage customers, rewards, redemptions, flyers, 
+  banners, in-app offers, campaign performance, and loyalty trends from a scalable rewards system.
+
+- [Odoo AI Business Reporter](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/odoo-ai-business-reporter)
+  WhatsApp business intelligence assistant connected to Odoo ERP, built with n8n, Gemini, Claude, OpenRouter, Evolution API, Slack, and Google Calendar. Store owners and managers 
+  can ask questions in natural language about daily sales, weekly revenue, top-selling products, inventory, purchases, and store performance. The assistant retrieves live Odoo data 
+  and returns concise reports through WhatsApp, reducing the need to open dashboards for routine business checks.
+
+- [Product Analysis](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/product-analysis)
+  AI document processing and knowledge extraction pipeline built with n8n, Google Drive, Supabase Vector Store, Telegram, Google Sheets, LangChain, OpenAI, Gemini, Claude, 
+  HuggingFace, Anthropic, Vertex AI, and Slack. It detects new PDFs such as contracts, financial reports, and technical documents, cleans and categorizes extracted text, stores 
+  embeddings for semantic search, and answers Telegram queries with sourced replies. The system reduced manual lookup time by 70% for compliance, legal, and finance workflows.
+
+- [Product QA](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/product-qa)
+  Enterprise PDF query automation built with Make.com, Google Drive, DumplingAI, Google Sheets, Telegram, LangChain, OpenAI, Gemini, Claude, HuggingFace, Anthropic, Vertex AI, 
+  and Slack. It converts uploaded PDFs into usable text, structures extracted content in Sheets, and uses RAG to answer user questions through Telegram with context-aware responses. 
+  The workflow reduced response times and manual document lookup by 70%.
+
+- [ShelfPerks](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/shelf-perks)
+  Retail operations and store management app for 2497 Inc, built with Firebase, Android, iOS, Figma, CircleCI, Fastlane, Jira, Slack, Stripe, Stax, receipt printer support, 
+  and charts. It helps store owners process transactions, manage inventory, generate reports, analyze sales data, and improve checkout. Retail teams use it to reduce manual 
+  work, get real-time operational insights, improve customer satisfaction, and drive sales growth.
+
+- [ShelfScan](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/shelf-scan)
+  Vision AI shelf intelligence tool built with Streamlit, Docker, Vision Agent, LangChain, OpenAI, Gemini, Claude, HuggingFace, Anthropic, Vertex AI, and Slack. Retailers 
+  upload shelf photos to count products, detect stock visibility issues, speed up audits, and identify missing items or poor product placement. The system reduces manual shelf 
+  checks, improves stock accuracy, and gives supermarkets and retail chains data for better shelf planning.
+
+- [Shyaway](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/shyaway)
+  E-commerce mobile app for the Shyaway lingerie brand, built with GraphQL, Android, iOS, Firebase, Magento, GitLab, Fastlane, Postman, Jira, and Zeplin. The app focuses on 
+  private, convenient product discovery with a wide catalog, personalized recommendations, easy navigation, secure payment options, order tracking, and responsive support. 
+  It helped improve customer satisfaction, loyalty, repeat purchases, referrals, and sales growth for the brand.
+
+- [Solve EOD](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/solve-eod)
+  Centralized operations and reporting management platform built with React, Node.js, PostgreSQL, AWS, Docker, Bootstrap, CI/CD, Postman, Jira, GitLab, SourceTree, Zeplin, and 
+  Slack. It standardizes end-of-day reporting with customizable templates, role-based document access, cloud document management, team collaboration, and real-time dashboards. 
+  The platform helps organizations reduce data silos, improve governance, and make faster operational decisions.
+
+- [Stree F&B](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/stree)
+  Customer engagement and service automation system for a coffee machine, vending, beverage, and equipment business. Built with Claude, Gemini, OpenAI, Microsoft Azure, Microsoft 
+  Dynamics 365 Business Central, WATI WhatsApp, Evolution API, Power Automate, Copilot Studio, Clay, Apollo, Google News, and Slack, it manages enquiries, sales conversations, 
+  service requests, approvals, email responses, and WhatsApp communication. The automation reduces response time, keeps communication consistent, and lets support teams focus on 
+  higher-value work.
 
 ## Experience
 
-- **AI Agent & Full-Stack Engineer** — Manisoft Solutions (2020–Present): AI agents, RAG pipelines, n8n/Make.com automation, React, Next.js, Nest.js, MongoDB, React Native, Node.js
-- **Software Architect** — Manisoft Solutions (2015–Present): End-to-end architecture, mobile/web/backend systems, microservices, DevOps, cloud
-- **Senior Mobile Developer** — iHorse Technologies (2013–2015): Android and iOS native development, React Native, Flutter
-- **Android Developer** — JP Infotech (2012–2013): Android SDK, Java, REST APIs, Google Play deployment
+- **AI Agent & Full-Stack Engineer** — Manisoft Solutions (2020–Present)
+  Builds AI-driven automation systems, intelligent agents, RAG pipelines, workflow orchestrations, and scalable full-stack applications for premium clients.
+  Works across LangChain, n8n, Make.com, MCP, LLMs, APIs, integrations, React, Next.js, Nest.js, AWS, Supabase, and cloud-native architectures.
+  Focuses on solving operational challenges and taking MVPs from concept to deployment.
+
+- **Software Architect** — Manisoft Solutions (2015–Present)
+  Leading end-to-end architecture, development, and delivery for scalable mobile, web, and backend systems.
+  Designs modern application architectures, implements high-performance full-stack solutions, and guides engineering practices across DevOps and product delivery.
+  Focus areas include React.js, Node.js, Android, iOS, APIs, databases, AWS, microservices, security, CI/CD, optimization, integration, scalability, and documentation.
+
+- **Senior Mobile Developer** — iHorse Technologies (2013–2015)
+  Led Android and iOS mobile application development across the full lifecycle from concept, UI/UX design, and implementation to deployment and post-launch support.
+  Worked closely with cross-functional teams, optimized app performance, resolved production issues, and delivered reliable, maintainable applications.
+  Core skills included Kotlin, Swift, iOS SDK, React Native, Flutter, MVVM/MVP, Firebase, Core Data, Room Database, push notifications, testing, and CI/CD pipelines.
+
+- **Android Developer** — JP Infotech (2012–2013)
+  Contributed to the development and maintenance of Android applications, including new feature rollouts, app functionality improvements, and user retention enhancements.
+  Integrated RESTful APIs for data management and synchronization while building Android screens, UI components, and app workflows.
+  Core skills included Java, Android SDK, XML layouts, REST APIs, JSON parsing, SQLite, Shared Preferences, AsyncTask/threading, app lifecycle management, Git, and Google Play deployment.
 
 ## Education
 
 - M.Sc Computer Science — Pondicherry University (2010–2012)
+  Studied advanced programming concepts, software techniques, algorithms, analysis, networking, and systems.
+  The program strengthened my focus on Android mobile development through a final-year automation project with hands-on, user-centric app development.
+
 - Bachelor of Computer Applications — Pondicherry University (2007–2010)
+  Built a foundation in core computer science, software development, programming languages, database management systems, and algorithm design.
+  This academic base supported my later work across mobile apps, web platforms, backend systems, and product engineering.
 
 ## Stats
 
