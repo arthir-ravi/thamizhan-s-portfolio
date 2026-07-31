@@ -1566,8 +1566,8 @@ p {
   width: max-content;
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-animation: technologies-marquee 46s linear infinite;
-  animation: technologies-marquee 46s linear infinite;
+  -webkit-animation: technologies-marquee 90s linear infinite;
+  animation: technologies-marquee 90s linear infinite;
   will-change: transform;
 }
 
@@ -1622,8 +1622,8 @@ p {
 
 .technology_icon .tech_logo {
   display: block;
-  width: 104px;
-  height: 104px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
   margin: 0 auto;
 }
