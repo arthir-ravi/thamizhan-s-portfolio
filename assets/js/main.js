@@ -101,10 +101,44 @@ $(function () {
   var $projectsGrid = $(".projects_grid");
   var projectItems = $projectsGrid.children(".project_item").clone();
 
+  function makeCarouselControlsAccessible($carousel, prevLabel, nextLabel) {
+    function updateControls() {
+      $carousel.find(".owl-nav button.owl-prev")
+        .removeAttr("role")
+        .attr({
+          type: "button",
+          "aria-label": prevLabel,
+        })
+        .find("i")
+        .attr("aria-hidden", "true");
+
+      $carousel.find(".owl-nav button.owl-next")
+        .removeAttr("role")
+        .attr({
+          type: "button",
+          "aria-label": nextLabel,
+        })
+        .find("i")
+        .attr("aria-hidden", "true");
+    }
+
+    $carousel.off(".carouselA11y").on(
+      "initialized.owl.carousel.carouselA11y refreshed.owl.carousel.carouselA11y changed.owl.carousel.carouselA11y translated.owl.carousel.carouselA11y",
+      updateControls
+    );
+    window.setTimeout(updateControls, 0);
+  }
+
   function initProjectsCarousel() {
     if (!$.fn.owlCarousel || !$projectsGrid.length) {
       return;
     }
+
+    makeCarouselControlsAccessible(
+      $projectsGrid,
+      "Previous projects",
+      "Next projects"
+    );
 
     $projectsGrid.owlCarousel({
       items: 3,
@@ -191,7 +225,15 @@ $(function () {
 
   //===== Testimonials carousel
   if ($.fn.owlCarousel) {
-    $(".testimonial_slider").owlCarousel({
+    var $testimonialSlider = $(".testimonial_slider");
+
+    makeCarouselControlsAccessible(
+      $testimonialSlider,
+      "Previous testimonials",
+      "Next testimonials"
+    );
+
+    $testimonialSlider.owlCarousel({
       items: 1,
       loop: true,
       margin: 46,
