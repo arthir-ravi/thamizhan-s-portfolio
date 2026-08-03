@@ -603,6 +603,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   display: block;
   width: min(100%, 520px);
   height: auto;
+  aspect-ratio: 1 / 1;
 }
 
 .shelfperks_details_page .project_hero_features {
@@ -1421,6 +1422,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   aspect-ratio: 1 / 1;
   max-height: 520px;
   width: 100%;
+  overflow: hidden;
 }
 
 .shyaway_details_page .shyaway_hero_visual::before {
@@ -1524,6 +1526,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 
 .marine_details_page .marine_screen_primary {
   width: min(100%, 620px);
+  height: auto;
+  aspect-ratio: 1447 / 1087;
   margin-left: auto;
 }
 
@@ -1768,6 +1772,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   display: block;
   width: min(100%, 540px);
   height: auto;
+  aspect-ratio: 1536 / 1024;
   margin: 0 auto;
 }
 
@@ -1815,6 +1820,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   display: block;
   width: min(100%, 300px);
   height: auto;
+  aspect-ratio: 585 / 1200;
   margin: 0 auto;
 }
 
