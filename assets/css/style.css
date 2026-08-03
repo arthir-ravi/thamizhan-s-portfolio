@@ -1247,7 +1247,8 @@ p {
 .about_image img {
   display: block;
   width: 108%;
-  max-width: 108%;
+  height: auto;
+  max-width: none;
   margin-left: -4%;
 }
 .about_image .about_experience {
@@ -1374,7 +1375,8 @@ p {
 
   .about_image img {
     width: 106%;
-    max-width: 106%;
+    height: auto;
+    max-width: none;
     margin-left: -3%;
   }
 
@@ -1429,7 +1431,8 @@ p {
 
   .about_image img {
     width: 104%;
-    max-width: 104%;
+    height: auto;
+    max-width: none;
     margin-left: -2%;
   }
 
@@ -1486,7 +1489,8 @@ p {
 
   .about_image img {
     width: 102%;
-    max-width: 102%;
+    height: auto;
+    max-width: none;
     margin-left: -1%;
   }
 

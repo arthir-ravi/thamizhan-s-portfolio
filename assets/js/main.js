@@ -25,7 +25,7 @@ $(function () {
     $navbarPlaceholder.load(
       basePath + "components/navbar.html",
       function () {
-        var logoPath = (basePath || "") + "assets/images/fav/favicon.ico";
+        var logoPath = (basePath || "") + "assets/images/fav/android-chrome-192x192.webp";
         $navbarPlaceholder.find(".navbar-brand img").attr("src", logoPath);
         $navbarPlaceholder.find(".navbar-brand").attr("href", basePath || "./");
         if (basePath) {
