@@ -44,6 +44,18 @@ $(function () {
     initNavbar();
   }
 
+  $(document).on(
+    "initialized.owl.carousel refreshed.owl.carousel changed.owl.carousel translated.owl.carousel",
+    ".project_showcase_slider",
+    function () {
+      window.setTimeout(function () {
+        $(".project_hero_dots .owl-dot").each(function (index) {
+          $(this).attr("aria-label", "Show slide " + (index + 1));
+        });
+      }, 0);
+    }
+  );
+
   function initNavbar() {
     //===== Sticky
     $(window).on("scroll", function (event) {
