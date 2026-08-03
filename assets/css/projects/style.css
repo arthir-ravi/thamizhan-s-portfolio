@@ -1383,6 +1383,10 @@ body.inner_page .navbar-nav .nav-item:hover > a {
     padding: 22px 18px;
   }
 
+  .product_qa_page .mail_automation_hero {
+    min-height: 600px;
+  }
+
   .marketplace_showcase_area {
     padding-bottom: 46px;
   }
