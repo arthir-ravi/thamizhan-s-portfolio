@@ -1,7 +1,7 @@
 /*===========================
       01.COMMON css 
 ===========================*/
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=optional");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap");
 :root {
   --color-primary: #00a78e;
   --color-primary-light: rgba(0, 167, 142, 0.7);
