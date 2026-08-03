@@ -480,7 +480,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 }
 .slider_image_page .project_showcase_slider {
   aspect-ratio: 4 / 3;
-  overflow: visible;
+  overflow: hidden;
   background: transparent !important;
 }
 .slider_image_page .project_showcase_slider .showcase_slide {
@@ -1418,7 +1418,9 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 520px;
+  aspect-ratio: 1 / 1;
+  max-height: 520px;
+  width: 100%;
 }
 
 .shyaway_details_page .shyaway_hero_visual::before {
@@ -1601,7 +1603,6 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   }
 
   .shyaway_details_page .shyaway_hero_visual {
-    min-height: 460px;
     margin-top: 28px;
   }
 
@@ -1638,7 +1639,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   }
 
   .shyaway_details_page .shyaway_hero_visual {
-    min-height: 360px;
+    max-height: 360px;
   }
 
   .shyaway_details_page .shyaway_phone {
