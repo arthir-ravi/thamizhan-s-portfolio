@@ -1098,12 +1098,14 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 }
 
 .ai_receptionist_page .ai_impact_grid,
-.lawagent_page .ai_impact_grid {
+.lawagent_page .ai_impact_grid,
+.qzy_details_page .ai_impact_grid {
   row-gap: 24px;
 }
 
 .ai_receptionist_page .ai_impact_item,
-.lawagent_page .ai_impact_item {
+.lawagent_page .ai_impact_item,
+.qzy_details_page .ai_impact_item {
   height: 100%;
   padding: 24px;
   border-radius: 12px;
@@ -1113,14 +1115,16 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 }
 
 .ai_receptionist_page .ai_impact_item:hover,
-.lawagent_page .ai_impact_item:hover {
+.lawagent_page .ai_impact_item:hover,
+.qzy_details_page .ai_impact_item:hover {
   transform: translateY(-3px);
   border-color: rgba(0, 167, 142, 0.25);
   box-shadow: 0 10px 30px rgba(0, 167, 142, 0.08);
 }
 
 .ai_receptionist_page .ai_impact_item h5,
-.lawagent_page .ai_impact_item h5 {
+.lawagent_page .ai_impact_item h5,
+.qzy_details_page .ai_impact_item h5 {
   margin-top: 18px;
   font-size: 15px;
   font-weight: 700;
@@ -1128,7 +1132,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 }
 
 .ai_receptionist_page .ai_impact_item p,
-.lawagent_page .ai_impact_item p {
+.lawagent_page .ai_impact_item p,
+.qzy_details_page .ai_impact_item p {
   margin-top: 10px;
   font-size: 13px;
   line-height: 22px;
@@ -1919,3 +1924,21 @@ body.inner_page .navbar-nav .nav-item:hover > a {
     margin-bottom: 30px;
   }
 }
+
+/*======================================
+    QZY Page Overrides
+======================================*/
+.qzy_details_page .project_feature_list {
+  margin-top: 24px;
+}
+
+@media (max-width: 991px) {
+  .qzy_details_page .project_about_area .row > [class*="col-"]:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .qzy_details_page .h-100 {
+    height: auto !important;
+  }
+}
+
+

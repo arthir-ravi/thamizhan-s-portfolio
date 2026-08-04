@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>QZY - Smart Queue Management & Token Tracking Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QZY is a smart queue management application designed to simplify customer flow, eliminate traditional waiting lines, and provide real-time token tracking via QR codes.">
+    <meta name="keywords" content="QZY, Queue Management App, Smart Queue System, Token Tracking, QR Code Queue, Live Queue Status, Multi-Service Queue, Team Management, Mobile App, Flutter, Firebase">
+    <meta name="author" content="Thamizhan S">
+    <link rel="canonical" href="https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/qzy">
+
+    <!-- Favicons -->
+    <link rel="icon" href="../../assets/images/fav/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="../../assets/images/fav/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="../../assets/images/fav/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="../../assets/images/fav/apple-touch-icon.webp">
+    <link rel="icon" type="image/png" href="../../assets/images/fav/android-chrome-192x192.webp">
+    <link rel="icon" type="image/png" href="../../assets/images/fav/android-chrome-512x512.webp">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="QZY - Smart Queue Management & Token Tracking Application">
+    <meta property="og:description" content="QZY is a smart queue management application designed to simplify customer flow, eliminate traditional waiting lines, and provide real-time token tracking via QR codes.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/qzy">
+    <meta property="og:image" content="https://arthir-ravi.github.io/thamizhan-s-portfolio/assets/images/projects/qzy/qzy1.webp">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="QZY - Smart Queue Management & Token Tracking Application">
+    <meta name="twitter:description" content="QZY is a smart queue management application designed to simplify customer flow, eliminate traditional waiting lines, and provide real-time token tracking via QR codes.">
+    <meta name="twitter:image" content="https://arthir-ravi.github.io/thamizhan-s-portfolio/assets/images/projects/qzy/qzy1.webp">
+
+    <!-- Schema.org for Google -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "TechArticle",
+              "@id": "https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/qzy#article",
+              "headline": "QZY - Smart Queue Management & Token Tracking Application",
+              "description": "QZY simplifies customer flow and eliminates physical waiting lines with QR code queue joining, real-time token tracking, multi-service handling, and team management.",
+              "image": {
+                "@type": "ImageObject",
+                "url": "https://arthir-ravi.github.io/thamizhan-s-portfolio/assets/images/projects/qzy/qzy1.webp"
+              },
+              "author": { "@id": "https://arthir-ravi.github.io/thamizhan-s-portfolio/#person" },
+              "publisher": { "@id": "https://arthir-ravi.github.io/thamizhan-s-portfolio/#person" },
+              "datePublished": "2026-08-04",
+              "dateModified": "2026-08-04",
+              "inLanguage": "en",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/qzy"
+              },
+              "keywords": ["Queue Management", "Smart Token System", "QR Code Queue", "Mobile Application", "Flutter", "Firebase", "Real-Time Tracking"],
+              "about": ["Queue Management", "Mobile Development", "Customer Experience Automation", "Digital Transformation"]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/qzy#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://arthir-ravi.github.io/thamizhan-s-portfolio/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "QZY",
+                  "item": "https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/qzy"
+                }
+              ]
+            }
+          ]
+        }
+    </script>
+
+    <!-- Styles -->
+    <link rel="preload" as="image" href="../../assets/images/projects/qzy/qzy1.webp" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/default.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/projects/style.css">
+</head>
+<body class="inner_page slider_image_page qzy_details_page">
+    <!--====== PRELOADER PART START ======-->
+    <div class="preloader">
+        <div class="loader">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== PRELOADER PART ENDS ======-->
+
+    <!--====== NAVBAR PLACEHOLDER ======-->
+    <div id="navbar-placeholder" data-base-path="../../"></div>
+
+    <main>
+        <!--====== PROJECT HERO PART START ======-->
+        <section class="project_hero_area">
+            <div class="container">
+                <div class="row align-items-center project_hero_row">
+                    <div class="col-lg-6 wow fadeInLeftBig" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="project_hero_content">
+                            <span class="project_breadcrumb">Queue Management, Mobile App</span>
+                            <h1 class="project_title">Q<span>ZY</span></h1>
+                            <h2 class="project_subtitle">Smart Queue Management &amp; Token Tracking Platform</h2>
+                            <p class="project_desc">A smart queue management application designed to simplify customer flow, eliminate physical waiting lines, and enable real-time token tracking for businesses and customers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRightBig" data-wow-duration="1.3s" data-wow-delay="0.4s">
+                        <div class="project_showcase_wrapper">
+                            <div class="project_showcase_slide_area">
+                                <button class="project_hero_nav_btn project_hero_prev" type="button" aria-label="Previous image slide">
+                                    <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+                                </button>
+                                <div class="project_showcase_card">
+                                    <div class="project_showcase_slider owl-carousel">
+                                        <img class="showcase_slide" src="../../assets/images/projects/qzy/qzy1.webp" alt="QZY App Business and Queue Details Screen" width="600" height="600" fetchpriority="high">
+                                        <img class="showcase_slide" src="../../assets/images/projects/qzy/qzy2.webp" alt="QZY App Dashboard and Location picker Screen" width="600" height="600" loading="lazy">
+                                        <img class="showcase_slide" src="../../assets/images/projects/qzy/qzy3.webp" alt="QZY App Plans and QR code Screen" width="600" height="600" loading="lazy">
+                                        <img class="showcase_slide" src="../../assets/images/projects/qzy/qzy4.webp" alt="QZY App History and Business Details for User" width="600" height="600" loading="lazy">
+                                        <img class="showcase_slide" src="../../assets/images/projects/qzy/qzy5.webp" alt="QZY App History and Queue Details for Admin" width="600" height="600" loading="lazy">
+                                    </div>
+                                </div>
+                                <button class="project_hero_nav_btn project_hero_next" type="button" aria-label="Next image slide">
+                                    <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="project_hero_dots owl-dots"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== PROJECT HERO PART ENDS ======-->
+
+        <!--====== PROJECT ABOUT & FEATURES PART START ======-->
+        <section id="about" class="project_about_area pt-65">
+            <div class="container">
+                <div class="row align-items-stretch">
+                    <div class="col-lg-6">
+                        <div class="project_about_card h-100">
+                            <div class="project_section_head">
+                                <div class="project_section_icon"><i class="fa-regular fa-file-lines" aria-hidden="true"></i></div>
+                                <h3>ABOUT QZY</h3>
+                            </div>
+                            <div class="project_about_text">
+                                <p>
+                                    I contributed to the development of QZY, a smart queue management application designed to simplify customer flow and eliminate traditional waiting lines.
+                                </p>
+                                <p>
+                                    The platform enables customers to join queues effortlessly using QR codes, track token status in real time, and avoid waiting in physical lines. This seamless digital experience minimizes crowded waiting areas and delivers a faster, more convenient service experience.
+                                </p>
+                                <p>
+                                    Key features include multi-service management, team member management, token calling and skipping, queue history, and live queue tracking—delivering a faster, smarter, and highly organized experience for both businesses and customers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="project_about_card ai_features_card h-100">
+                            <div class="project_section_head">
+                                <div class="project_section_icon"><i class="fa-solid fa-star" aria-hidden="true"></i></div>
+                                <h3>DISTINCTIVE FEATURES</h3>
+                            </div>
+                            <div class="project_feature_list">
+                                <div class="project_feature_item">
+                                    <div class="project_feature_icon">
+                                        <i class="fa-solid fa-qrcode" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="project_feature_text">
+                                        <h5>Instant QR Queue Entry</h5>
+                                        <p>Customers scan a QR code to enter the queue instantly without installing complex hardware.</p>
+                                    </div>
+                                </div>
+                                <div class="project_feature_item">
+                                    <div class="project_feature_icon">
+                                        <i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="project_feature_text">
+                                        <h5>Real-Time Token Tracking</h5>
+                                        <p>Live status updates keep customers informed of their queue position.</p>
+                                    </div>
+                                </div>
+                                <div class="project_feature_item">
+                                    <div class="project_feature_icon">
+                                        <i class="fa-solid fa-users-gear" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="project_feature_text">
+                                        <h5>Counter &amp; Staff Controls</h5>
+                                        <p>Staffs manage token calling, holding, skipping, and counter assignments efficiently.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== PROJECT ABOUT PART ENDS ======-->
+
+        <!--====== TOOLS USED PART START ======-->
+        <section class="tools_used_area">
+            <div class="container">
+                <div class="tools_used_card">
+                    <div class="project_section_head">
+                        <div class="project_section_icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+                        <h3>TOOLS USED</h3>
+                    </div>
+                    <div class="tools_grid">
+                        <span class="tool_pill">Docker</span>
+                        <span class="tool_pill">PostgreSQL</span>
+                        <span class="tool_pill">React</span>
+                        <span class="tool_pill">iOS</span>
+                        <span class="tool_pill">Android</span>
+                        <span class="tool_pill">Android Studio</span>
+                        <span class="tool_pill">Firebase</span>
+                        <span class="tool_pill">Slack</span>
+                        <span class="tool_pill">GitLab</span>
+                        <span class="tool_pill">Postman</span>
+                        <span class="tool_pill">NestJS</span>
+                        <span class="tool_pill">Razorpay</span>
+                        <span class="tool_pill">Microsoft Clarity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--====== TOOLS USED PART ENDS ======-->
+    </main>
+
+    <!--====== FOOTER PLACEHOLDER ======-->
+    <div id="footer-placeholder" data-base-path="../../"></div>
+
+    <!--====== Jquery js ======-->
+    <script src="../../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/jquery.easing.min.js"></script>
+    <script src="../../assets/js/scrolling-nav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--====== Main js ======-->
+    <script src="../../assets/js/main.js"></script>
+
+    <!--====== Project showcase slider ======-->
+    <script>
+        $(function () {
+            var owl = $(".project_showcase_slider");
+            owl.owlCarousel({
+                items: 1,
+                loop: true,
+                nav: false,
+                dots: true,
+                dotsContainer: '.project_hero_dots',
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: true,
+                smartSpeed: 500,
+                mouseDrag: true,
+                touchDrag: true
+            });
+            $(".project_hero_prev").click(function () {
+                owl.trigger("prev.owl.carousel");
+            });
+            $(".project_hero_next").click(function () {
+                owl.trigger("next.owl.carousel");
+            });
+        });
+    </script>
+</body>
+</html>
