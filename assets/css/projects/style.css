@@ -1,3 +1,12 @@
+body.inner_page #navbar-placeholder {
+  min-height: 84px;
+}
+@media (max-width: 991px) {
+  body.inner_page #navbar-placeholder {
+    min-height: 78px;
+  }
+}
+
 body.inner_page .header_navbar {
   position: relative;
   background: var(--color-white);
@@ -152,6 +161,12 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   overflow: hidden;
   border-radius: 10px;
   background: var(--color-white);
+}
+.project_showcase_slider.owl-carousel:not(.owl-loaded) {
+  display: block;
+}
+.project_showcase_slider.owl-carousel:not(.owl-loaded) > *:not(:first-child) {
+  display: none;
 }
 .project_showcase_slider .showcase_slide {
   display: block;
@@ -1369,6 +1384,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
     padding-top: 16px;
   }
 
+  .ai_receptionist_page .ai_receptionist_panel,
   .product_analysis_page .mail_video_panel {
     padding: 0;
   }
