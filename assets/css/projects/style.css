@@ -71,7 +71,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   width: 560px;
   height: 560px;
   border-radius: 50%;
-  background: rgba(227, 27, 35, 0.08);
+  background: rgba(255, 143, 74, 0.08);
   filter: blur(10px);
   z-index: 0;
 }
@@ -207,7 +207,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 }
 .project_hero_dots .owl-dot.active span {
   background: var(--color-primary);
-  box-shadow: 0 0 0 2px rgba(227, 27, 35, 0.25);
+  box-shadow: 0 0 0 2px rgba(255, 143, 74, 0.25);
 }
 .project_hero_dots .owl-dot:hover span {
   background: var(--color-primary);
@@ -240,7 +240,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   height: 100%;
   padding: 28px 24px;
   border-radius: 14px;
-  background: hsl(355, 70%, 97%);
+  background: rgba(255, 143, 74, 0.06);
 }
 .project_feature_item {
   position: relative;
@@ -258,7 +258,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   left: 24px;
   top: 48px;
   bottom: 0;
-  border-left: 2px dashed rgba(227, 27, 35, 0.35);
+  border-left: 2px dashed rgba(255, 143, 74, 0.35);
 }
 .project_feature_icon {
   position: relative;
@@ -273,7 +273,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   background: var(--color-white);
   color: var(--color-primary);
   font-size: 19px;
-  border: 1.5px solid rgba(227, 27, 35, 0.22);
+  border: 1.5px solid rgba(255, 143, 74, 0.22);
 }
 .project_feature_text {
   padding-top: 4px;
@@ -343,7 +343,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   transition: all 0.25s ease;
 }
 .tool_pill:hover {
-  border-color: rgba(227, 27, 35, 0.25);
+  border-color: rgba(255, 143, 74, 0.25);
   transform: translateY(-2px);
 }
 @media (min-width: 992px) {
@@ -774,7 +774,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 .project_rating {
   display: inline-flex;
   gap: 6px;
-  color: #E31B23;
+  color: #ff8f4a;
 }
 
 @media (min-width: 992px) {
@@ -909,8 +909,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   max-width: 620px;
   padding: 34px;
   border-radius: 16px;
-  background: rgba(227, 27, 35, 0.07);
-  border: 1px solid rgba(227, 27, 35, 0.1);
+  background: rgba(255, 143, 74, 0.07);
+  border: 1px solid rgba(255, 143, 74, 0.1);
 }
 
 .mail_automation_page .mail_video_frame {
@@ -989,8 +989,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   margin-top: 32px;
   padding: 28px 26px;
   border-radius: 10px;
-  background: rgba(227, 27, 35, 0.04);
-  border: 1px solid rgba(227, 27, 35, 0.12);
+  background: rgba(255, 143, 74, 0.04);
+  border: 1px solid rgba(255, 143, 74, 0.12);
 }
 
 .product_analysis_page .mail_video_feature .project_feature_icon {
@@ -1041,13 +1041,13 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   margin: 0 0 26px;
   padding: 24px;
   border-radius: 14px;
-  background: rgba(227, 27, 35, 0.04);
-  border: 1px solid rgba(227, 27, 35, 0.12);
+  background: rgba(255, 143, 74, 0.04);
+  border: 1px solid rgba(255, 143, 74, 0.12);
   box-shadow: 0 14px 34px rgba(41, 54, 81, 0.06);
 }
 
 .product_qa_page .mail_video_feature .project_feature_icon {
-  background: rgba(227, 27, 35, 0.07);
+  background: rgba(255, 143, 74, 0.07);
 }
 
 /*======================================
@@ -1109,8 +1109,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   height: 100%;
   padding: 24px;
   border-radius: 12px;
-  background: rgba(227, 27, 35, 0.04);
-  border: 1px solid rgba(227, 27, 35, 0.1);
+  background: rgba(255, 143, 74, 0.04);
+  border: 1px solid rgba(255, 143, 74, 0.1);
   transition: 0.3s;
 }
 
@@ -1118,8 +1118,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 .lawagent_page .ai_impact_item:hover,
 .qzy_details_page .ai_impact_item:hover {
   transform: translateY(-3px);
-  border-color: rgba(227, 27, 35, 0.25);
-  box-shadow: 0 10px 30px rgba(227, 27, 35, 0.08);
+  border-color: rgba(255, 143, 74, 0.25);
+  box-shadow: 0 10px 30px rgba(255, 143, 74, 0.08);
 }
 
 .ai_receptionist_page .ai_impact_item h5,
@@ -1384,7 +1384,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 
   .mail_automation_page .mail_video_feature + .mail_video_feature {
     border-left: 0;
-    border-top: 1px solid rgba(227, 27, 35, 0.15);
+    border-top: 1px solid rgba(255, 143, 74, 0.15);
     padding-left: 0;
     padding-top: 16px;
   }
@@ -1457,7 +1457,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   position: absolute;
   inset: 12% 8%;
   border-radius: 50%;
-  background: rgba(227, 27, 35, 0.07);
+  background: rgba(255, 143, 74, 0.07);
 }
 
 .shyaway_details_page .shyaway_phone {
@@ -1494,16 +1494,16 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   height: 100%;
   padding: 24px;
   border-radius: 12px;
-  background: rgba(227, 27, 35, 0.04);
-  border: 1px solid rgba(227, 27, 35, 0.1);
+  background: rgba(255, 143, 74, 0.04);
+  border: 1px solid rgba(255, 143, 74, 0.1);
   transition: 0.3s;
 }
 
 .shyaway_impact_item:hover,
 .shyaway_details_page .shyaway_impact_item:hover {
   transform: translateY(-3px);
-  border-color: rgba(227, 27, 35, 0.25);
-  box-shadow: 0 10px 30px rgba(227, 27, 35, 0.08);
+  border-color: rgba(255, 143, 74, 0.25);
+  box-shadow: 0 10px 30px rgba(255, 143, 74, 0.08);
 }
 
 .shyaway_details_page .shyaway_impact_item h5 {
@@ -1603,15 +1603,15 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   height: 100%;
   padding: 24px;
   border-radius: 12px;
-  background: rgba(227, 27, 35, 0.04);
-  border: 1px solid rgba(227, 27, 35, 0.1);
+  background: rgba(255, 143, 74, 0.04);
+  border: 1px solid rgba(255, 143, 74, 0.1);
   transition: 0.3s;
 }
 
 .marine_details_page .marine_feature_item:hover {
   transform: translateY(-3px);
-  border-color: rgba(227, 27, 35, 0.25);
-  box-shadow: 0 10px 30px rgba(227, 27, 35, 0.08);
+  border-color: rgba(255, 143, 74, 0.25);
+  box-shadow: 0 10px 30px rgba(255, 143, 74, 0.08);
 }
 
 .marine_details_page .marine_feature_item h5 {
@@ -1707,15 +1707,15 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   height: 100%;
   padding: 24px 20px;
   border-radius: 12px;
-  background: rgba(227, 27, 35, 0.04);
-  border: 1px solid rgba(227, 27, 35, 0.1);
+  background: rgba(255, 143, 74, 0.04);
+  border: 1px solid rgba(255, 143, 74, 0.1);
   transition: 0.3s;
 }
 
 .solve_eod_feature_item:hover {
   transform: translateY(-3px);
-  border-color: rgba(227, 27, 35, 0.25);
-  box-shadow: 0 10px 30px rgba(227, 27, 35, 0.08);
+  border-color: rgba(255, 143, 74, 0.25);
+  box-shadow: 0 10px 30px rgba(255, 143, 74, 0.08);
 }
 
 .solve_eod_feature_item h5 {
@@ -1742,8 +1742,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   margin-top: 24px;
   padding: 16px 14px;
   border-radius: 12px;
-  background: rgba(227, 27, 35, 0.04);
-  border: 1px solid rgba(227, 27, 35, 0.12);
+  background: rgba(255, 143, 74, 0.04);
+  border: 1px solid rgba(255, 143, 74, 0.12);
   width: 100%;
   box-sizing: border-box;
 }
@@ -1756,7 +1756,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
 }
 
 .fuel_hero_feature + .fuel_hero_feature {
-  border-left: 1px solid rgba(227, 27, 35, 0.15);
+  border-left: 1px solid rgba(255, 143, 74, 0.15);
   padding-left: 10px;
 }
 
@@ -1771,8 +1771,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  border: 1px solid rgba(227, 27, 35, 0.2);
-  box-shadow: 0 4px 10px rgba(227, 27, 35, 0.08);
+  border: 1px solid rgba(255, 143, 74, 0.2);
+  box-shadow: 0 4px 10px rgba(255, 143, 74, 0.08);
 }
 
 .fuel_hero_feature .project_feature_text {
@@ -1834,7 +1834,7 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   }
   .fuel_hero_feature + .fuel_hero_feature {
     border-left: none;
-    border-top: 1px solid rgba(227, 27, 35, 0.15);
+    border-top: 1px solid rgba(255, 143, 74, 0.15);
     padding-left: 0;
     padding-top: 16px;
   }
@@ -1877,15 +1877,15 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   height: 100%;
   padding: 24px;
   border-radius: 12px;
-  background: rgba(227, 27, 35, 0.04);
-  border: 1px solid rgba(227, 27, 35, 0.1);
+  background: rgba(255, 143, 74, 0.04);
+  border: 1px solid rgba(255, 143, 74, 0.1);
   transition: 0.3s;
 }
 
 .chargedock_impact_item:hover {
   transform: translateY(-3px);
-  border-color: rgba(227, 27, 35, 0.25);
-  box-shadow: 0 10px 30px rgba(227, 27, 35, 0.08);
+  border-color: rgba(255, 143, 74, 0.25);
+  box-shadow: 0 10px 30px rgba(255, 143, 74, 0.08);
 }
 
 .chargedock_impact_item .project_feature_icon {
@@ -1898,8 +1898,8 @@ body.inner_page .navbar-nav .nav-item:hover > a {
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  border: 1px solid rgba(227, 27, 35, 0.2);
-  box-shadow: 0 4px 10px rgba(227, 27, 35, 0.08);
+  border: 1px solid rgba(255, 143, 74, 0.2);
+  box-shadow: 0 4px 10px rgba(255, 143, 74, 0.08);
 }
 
 .chargedock_impact_item h5 {
