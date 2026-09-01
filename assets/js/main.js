@@ -2,9 +2,10 @@ $(function () {
   "use strict";
 
   //===== Prealoder
-  $(window).on("load", function (event) {
-    $(".preloader").delay(150).fadeOut(250);
-  });
+  // Hide as soon as the DOM/critical assets are ready instead of waiting for
+  // every image and third-party script to finish (window "load"), which was
+  // holding a full-screen overlay over the page for the entire load time.
+  $(".preloader").delay(150).fadeOut(250);
 
   //===== Load Reusable Footer Component
   var $footerPlaceholder = $("#footer-placeholder");
