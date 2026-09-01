@@ -3,7 +3,7 @@ $(function () {
 
   //===== Prealoder
   $(window).on("load", function (event) {
-    $(".preloader").delay(500).fadeOut(500);
+    $(".preloader").delay(150).fadeOut(250);
   });
 
   //===== Load Reusable Footer Component

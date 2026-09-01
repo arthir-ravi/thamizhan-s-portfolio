@@ -42,7 +42,7 @@ LinkedIn: https://www.linkedin.com/in/thamizhans
 ## Technologies
 
 AI/LLM: LangChain, OpenAI, Gemini, Claude, RAG
-Automation: n8n, Make.com, Zapier, Clay
+Automation: n8n, Make.com, Zapier, Power Automate, Clay
 Web: React.js, Next.js, Node.js, Nest.js, Express.js, GraphQL
 Mobile: Android (Kotlin), iOS (Swift), React Native, Flutter
 Database: MongoDB, PostgreSQL, Supabase, Redis, Firebase
@@ -51,107 +51,114 @@ Tools: Figma, Postman, GitHub, Jira, Streamlit
 
 ## Portfolio — Case Studies
 
-- [AI Lead Outreach Automation](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/ai-lead-outreach)
+- [AI Lead Outreach Automation](https://thamizhan.pro/casestudies/ai-lead-outreach)
   End-to-end B2B lead nurturing system built with Clay, n8n, Supabase, Gmail, Evolution API, OpenRouter, Claude, and OpenAI. 
   It collects and enriches prospect data from multiple sources, stores structured lead records in Supabase, analyzes each company by services, 
   reviews, and business stage, then generates personalized partnership emails and WhatsApp messages. 
   The workflow removes repetitive prospect research and follow-up work while keeping outreach context aware across channels.
 
-- [AI Receptionist](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/ai-receptionist)
+- [AI Receptionist](https://thamizhan.pro/casestudies/ai-receptionist)
   Voice agent for hospitals and clinics built with Vapi.ai, n8n, Slack, and Google Calendar. It answers patient calls, checks doctor availability, 
   books appointments, and sends call summaries or notifications to staff and patients. The system gives patients a faster booking flow while reducing 
   front-desk workload and missed call pressure for healthcare teams.
 
-- [AI Virtual Receptionist](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/ai-virtual-receptionist)
+- [AI Virtual Receptionist](https://thamizhan.pro/casestudies/ai-virtual-receptionist)
   Multi-channel receptionist automation for hospitals, clinics, schools, salons, corporate offices, and service centers. Built with TrueGen AI, n8n, Slack, Google Sheets, 
   Webhooks, and Google Calendar, it handles video calls, voice calls, and chat conversations for appointments, availability checks, rescheduling, confirmations, FAQs, 
   and interruption handling. The platform is designed as a reusable reception layer that can be adapted across industries.
 
-- [Automated Mail](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/automated-mail)
+- [Automated Mail](https://thamizhan.pro/casestudies/automated-mail)
   Email workflow automation built with n8n, Google Sheets, Gmail, Slack, LangChain, OpenAI, Gemini, Claude, HuggingFace, Anthropic, and Vertex AI. 
   It reads campaign data from Google Sheets, applies business rules, schedules personalized emails through Gmail, respects sending limits, and writes delivery 
   logs back to Sheets for auditability. The automation gave non-technical teams a familiar spreadsheet-based control panel and reduced customer success workload by 85%.
 
-- [ChargeDock](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/chargedock)
+- [ChargeDock](https://thamizhan.pro/casestudies/chargedock)
   EV charging station finder and smart charging app built with Flutter, Firebase, MongoDB, Node.js, Angular, Socket.io, QR scanning, GPS maps, and Fastlane. 
   Users can find nearby chargers, monitor vehicle charge levels in real time, control charging sessions remotely, and receive low-charge notifications. 
   The product improves access to charging infrastructure, helps reduce range anxiety, and lets EV owners manage charging time more efficiently.
 
-- [Equs](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/equs)
+- [Equs](https://thamizhan.pro/casestudies/equs)
   Blockchain-backed identity and credential platform for secure digital identity, verifiable credentials, selective disclosure, and business verification. 
   Built for iOS and Android with blockchain and crypto wallet support, secure APIs, encryption, Swagger, Postman, GitLab, Jira, Figma, Android Studio, and Xcode. 
   Users can manage credentials and blockchain assets in one wallet, share only selected information, and let businesses verify records quickly to reduce fraud and 
   onboarding friction.
 
-- [FuelUp](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/fuel-app)
+- [FuelUp](https://thamizhan.pro/casestudies/fuel-app)
   Restaurant ordering, kitchen operations, and delivery platform for the Beefhouse restaurant chain in France. The ecosystem includes FuelUp for customer ordering, 
   FuelChef for server and kitchen coordination, and FuelDash for delivery operations. Built with Flutter, Android, iOS, Dart, Firebase, OneSignal, GPS maps, Apple Pay, 
   Stripe, in-app payments, Fastlane, Figma, Postman, Trello, GitHub, and Zeplin, it supports in-app orders, in-shop orders, real-time tracking, kitchen updates, 
   route optimization, and payment flows.
 
-- [Law Agent](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/lawagent)
+- [Law Agent](https://thamizhan.pro/casestudies/lawagent)
   Conversational legal research assistant built with LangChain, RAG, Streamlit, Docker, PyPDF, HuggingFace, Claude, OpenAI, Gemini, Anthropic, Vertex AI, and Slack. 
   It lets users ask legal questions in plain language, searches legal documents, retrieves relevant context, and returns clear answers from a secure workflow. The system 
   reduces research time, improves access to legal information, and supports both professionals and individuals without requiring deep legal search expertise.
 
-- [MR Marine](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/marine)
+- [MR Marine](https://thamizhan.pro/casestudies/marine)
   Mobile-first maritime field operations tracker built with Flutter, Dart, PHP, Firebase, ERP integration, GitLab, and Adobe XD. It helps maritime teams manage onsite operations, 
   shipment visibility, field reporting, communication, and stakeholder collaboration. The app replaces fragmented communication and manual processes with shared reporting, 
   real-time insights, workflow automation, and better productivity across supply chain operations.
 
-- [Marketplace](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/marketplace)
-  Local buying and selling web platform built with Next.js, React, Node.js, Strapi, MySQL, Tailwind CSS, Docker, Nodemailer, Slack, and Postman. Users can create product listings, browse by category and city, search with filters, and chat directly with sellers in real time. The platform improves local product discovery, supports multilingual regional use, and gives sellers a scalable way to publish, manage, and promote listings.
+- [Marketplace](https://thamizhan.pro/casestudies/marketplace)
+  Local buying and selling web platform built with Next.js, React, Node.js, Strapi, MySQL, Tailwind CSS, Docker, Nodemailer, Slack, and Postman. Users can create product listings,
+  browse by category and city, search with filters, and chat directly with sellers in real time. The platform improves local product discovery, supports multilingual regional use,
+  and gives sellers a scalable way to publish, manage, and promote listings.
 
-- [Misolah](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/misolah)
+- [Misolah](https://thamizhan.pro/casestudies/misolah)
   Photography and event booking marketplace built with Node.js, PostgreSQL, Firebase, FCM, Docker, GitLab, Postman, Slack, Figma, Android, iOS, Fastlane, Android Studio, and Xcode. 
   Event organizers can post requirements, receive competitive bids, review verified photographer profiles, compare portfolios and reviews, and communicate through real-time messaging. 
   Photographers get SEO-optimized listings, profile management, portfolio showcases, notifications, and promotional tools to grow bookings.
 
-- [Nova Earn](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/nova-earn)
+- [Nova Earn](https://thamizhan.pro/casestudies/nova-earn)
   QR-based loyalty and rewards platform built with React, Node.js, PostgreSQL, AWS, Docker, Bootstrap, CI/CD, GitLab, Jira, SourceTree, Zeplin, Slack, and Postman. Customers earn 
   points, convert them into QR vouchers, and redeem them securely at checkout across multiple business branches. Businesses can manage customers, rewards, redemptions, flyers, 
   banners, in-app offers, campaign performance, and loyalty trends from a scalable rewards system.
 
-- [Odoo AI Business Reporter](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/odoo-ai-business-reporter)
+- [Odoo AI Business Reporter](https://thamizhan.pro/casestudies/odoo-ai-business-reporter)
   WhatsApp business intelligence assistant connected to Odoo ERP, built with n8n, Gemini, Claude, OpenRouter, Evolution API, Slack, and Google Calendar. Store owners and managers 
   can ask questions in natural language about daily sales, weekly revenue, top-selling products, inventory, purchases, and store performance. The assistant retrieves live Odoo data 
   and returns concise reports through WhatsApp, reducing the need to open dashboards for routine business checks.
 
-- [Product Analysis](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/product-analysis)
+- [Product Analysis](https://thamizhan.pro/casestudies/product-analysis)
   AI document processing and knowledge extraction pipeline built with n8n, Google Drive, Supabase Vector Store, Telegram, Google Sheets, LangChain, OpenAI, Gemini, Claude, 
   HuggingFace, Anthropic, Vertex AI, and Slack. It detects new PDFs such as contracts, financial reports, and technical documents, cleans and categorizes extracted text, stores 
   embeddings for semantic search, and answers Telegram queries with sourced replies. The system reduced manual lookup time by 70% for compliance, legal, and finance workflows.
 
-- [Product QA](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/product-qa)
+- [Product QA](https://thamizhan.pro/casestudies/product-qa)
   Enterprise PDF query automation built with Make.com, Google Drive, DumplingAI, Google Sheets, Telegram, LangChain, OpenAI, Gemini, Claude, HuggingFace, Anthropic, Vertex AI, 
   and Slack. It converts uploaded PDFs into usable text, structures extracted content in Sheets, and uses RAG to answer user questions through Telegram with context-aware responses. 
   The workflow reduced response times and manual document lookup by 70%.
 
-- [ShelfPerks](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/shelf-perks)
+- [ShelfPerks](https://thamizhan.pro/casestudies/shelf-perks)
   Retail operations and store management app for 2497 Inc, built with Firebase, Android, iOS, Figma, CircleCI, Fastlane, Jira, Slack, Stripe, Stax, receipt printer support, 
   and charts. It helps store owners process transactions, manage inventory, generate reports, analyze sales data, and improve checkout. Retail teams use it to reduce manual 
   work, get real-time operational insights, improve customer satisfaction, and drive sales growth.
 
-- [ShelfScan](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/shelf-scan)
+- [ShelfScan](https://thamizhan.pro/casestudies/shelf-scan)
   Vision AI shelf intelligence tool built with Streamlit, Docker, Vision Agent, LangChain, OpenAI, Gemini, Claude, HuggingFace, Anthropic, Vertex AI, and Slack. Retailers 
   upload shelf photos to count products, detect stock visibility issues, speed up audits, and identify missing items or poor product placement. The system reduces manual shelf 
   checks, improves stock accuracy, and gives supermarkets and retail chains data for better shelf planning.
 
-- [Shyaway](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/shyaway)
+- [Shyaway](https://thamizhan.pro/casestudies/shyaway)
   E-commerce mobile app for the Shyaway lingerie brand, built with GraphQL, Android, iOS, Firebase, Magento, GitLab, Fastlane, Postman, Jira, and Zeplin. The app focuses on 
   private, convenient product discovery with a wide catalog, personalized recommendations, easy navigation, secure payment options, order tracking, and responsive support. 
   It helped improve customer satisfaction, loyalty, repeat purchases, referrals, and sales growth for the brand.
 
-- [Solve EOD](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/solve-eod)
+- [Solve EOD](https://thamizhan.pro/casestudies/solve-eod)
   Centralized operations and reporting management platform built with React, Node.js, PostgreSQL, AWS, Docker, Bootstrap, CI/CD, Postman, Jira, GitLab, SourceTree, Zeplin, and 
   Slack. It standardizes end-of-day reporting with customizable templates, role-based document access, cloud document management, team collaboration, and real-time dashboards. 
   The platform helps organizations reduce data silos, improve governance, and make faster operational decisions.
 
-- [Stree F&B](https://arthir-ravi.github.io/thamizhan-s-portfolio/casestudies/stree)
+- [Stree F&B](https://thamizhan.pro/casestudies/stree)
   Customer engagement and service automation system for a coffee machine, vending, beverage, and equipment business. Built with Claude, Gemini, OpenAI, Microsoft Azure, Microsoft 
   Dynamics 365 Business Central, WATI WhatsApp, Evolution API, Power Automate, Copilot Studio, Clay, Apollo, Google News, and Slack, it manages enquiries, sales conversations, 
   service requests, approvals, email responses, and WhatsApp communication. The automation reduces response time, keeps communication consistent, and lets support teams focus on 
   higher-value work.
+
+- [QZY](https://thamizhan.pro/casestudies/qzy/)
+  Smart queue management and token tracking platform designed to simplify customer flow, eliminate traditional waiting lines, and provide real-time token tracking for businesses and customers.
+  Built with Docker, PostgreSQL, React, iOS, Android, Android Studio, Firebase, Slack, GitLab, Postman, NestJS, Razorpay, and Microsoft Clarity.
+  Key features include QR-based queue entry, real-time token tracking, queue and token management, counter and staff controls, token calling and skipping, queue history, and live queue tracking.
 
 ## Experience
 
@@ -189,4 +196,4 @@ Tools: Figma, Postman, GitHub, Jira, Streamlit
 
 - 200+ projects completed
 - 20+ AI agents built
-- 14 years of experience
+- 14+ years of experience

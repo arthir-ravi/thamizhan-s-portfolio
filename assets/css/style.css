@@ -1,7 +1,6 @@
 /*===========================
       01.COMMON css
 ===========================*/
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800|Open+Sans:400,600,700&display=swap");
 :root {
   --color-primary: #5B6B46;
   --color-primary-light: rgba(113, 129, 109, 0.9);
@@ -1133,18 +1132,19 @@ p {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
   margin-top: 0 !important;
 }
 
 .header_hero_image img {
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 100%;
+  right: -60px;
+  transform: none;
   width: auto;
+  height: min(100%, 900px);
   max-width: none;
+  max-height: 900px;
   display: block;
 }
 
@@ -2368,6 +2368,12 @@ p {
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
+}
+
+.portfolio_image_link {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .project_image img {

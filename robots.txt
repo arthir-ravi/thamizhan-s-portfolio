@@ -1,9 +1,6 @@
-# robots.txt for Thamizhan S Portfolio
-# https://arthir-ravi.github.io/thamizhan-s-portfolio/
-
-# ── Standard Search Engines ──────────────────────────────
+# Standard Search Engines
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://arthir-ravi.github.io/thamizhan-s-portfolio/sitemap.xml
+Sitemap: https://thamizhan.pro/sitemap.xml
